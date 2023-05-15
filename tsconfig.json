@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/node-lts/tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "sourceMap": false,
+    "outDir": "types/",
+    "moduleResolution": "nodenext"
+  },
+  "include": ["src/**/*.js", "index.js"],
+  "exclude": ["types/", "src/**/*.test.js"]
+}
