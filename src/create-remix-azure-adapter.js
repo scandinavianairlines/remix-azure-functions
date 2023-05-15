@@ -12,7 +12,6 @@ installGlobals();
 
 /**
  * Creates a response object compatible with Azure Function.
- *
  * @param {Response} nodeResponse A Remix `Response` to the incoming request.
  * @returns {{ status: number, headers: object, body?: string }} A Remix `response` object.
  */
@@ -31,7 +30,6 @@ async function sendRemixResponse(nodeResponse) {
 
 /**
  * Transform Azure Http headers to Remix `Headers`.
- *
  * @param {import('@azure/functions').HttpRequestHeaders} requestHeaders - Azure HTTP Headers.
  * @param {string} [requestCookies] - The incoming request cookies.
  * @returns {NodeHeaders} An instance of Remix `Headers`.
@@ -53,7 +51,6 @@ function createRemixHeaders(requestHeaders, requestCookies) {
 
 /**
  * Creates a new instance of Remix `Request` based on the incoming Azure HTTP request object.
- *
  * @param {import('@azure/functions').HttpRequest} request - HTTP request object. Provided to your function when using HTTP Bindings.
  * @returns {NodeRequest} A new instance of NodeRequest
  */
@@ -86,7 +83,6 @@ function createRemixRequest({ body, cookies, headers, isBase64Encoded, method })
 /**
  * Returns a request handler for Azure Function's Node.js runtime that serves the
  * response using Remix.
- *
  * @param {object} properties - The argument object.
  * @param {import('@remix-run/server-runtime').ServerBuild} properties.build - The output of the compiler for the server build.
  * @param {(context: import('@azure/functions').Context) => import('@remix-run/server-runtime').AppLoadContext} [properties.getLoadContext] - A function that returns the value to use as `context` in route `loader` and `action` functions.
@@ -97,7 +93,6 @@ export function createRemixAzureAdapter({ build, getLoadContext, mode }) {
   const handler = createRemixRequestHandler(build, mode);
   /**
    * Handles incoming request
-   *
    * @param {import('@azure/functions').Context} context The Azure function context.
    * @returns {Promise<import('@azure/functions').HttpResponse>} The http response.
    */

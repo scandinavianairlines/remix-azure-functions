@@ -60,7 +60,6 @@ const BINARY_TYPES = [
 
 /**
  * Checks given `content-type` with a list of binary types, if the given value is included returns `true`.
- *
  * @param {string} contentType - A content-type value to test.
  * @returns {boolean} `true` if given value is a binary type.
  */
