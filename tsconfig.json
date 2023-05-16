@@ -6,9 +6,9 @@
     "declaration": true,
     "emitDeclarationOnly": true,
     "sourceMap": false,
-    "outDir": "types/",
+    "esModuleInterop": true,
     "moduleResolution": "nodenext"
   },
   "include": ["src/**/*.js", "index.js"],
-  "exclude": ["types/", "src/**/*.test.js"]
+  "exclude": ["index.d.ts", "src/**/*.d.ts", "src/**/*.test.js"]
 }

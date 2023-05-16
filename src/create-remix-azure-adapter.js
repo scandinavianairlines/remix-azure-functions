@@ -1,4 +1,3 @@
-import { isBinaryType } from './is-binary-type.js';
 import {
   AbortController as NodeAbortController,
   Headers as NodeHeaders,
@@ -7,13 +6,14 @@ import {
   installGlobals,
   readableStreamToString,
 } from '@remix-run/node';
+import { isBinaryType } from './is-binary-type.js';
 
 installGlobals();
 
 /**
  * Creates a response object compatible with Azure Function.
  * @param {Response} nodeResponse A Remix `Response` to the incoming request.
- * @returns {{ status: number, headers: object, body?: string }} A Remix `response` object.
+ * @returns {Promise<import('@azure/functions').HttpResponse>} A Remix `response` object.
  */
 async function sendRemixResponse(nodeResponse) {
   const contentType = nodeResponse.headers.get('Content-Type') ?? '';
@@ -31,7 +31,7 @@ async function sendRemixResponse(nodeResponse) {
 /**
  * Transform Azure Http headers to Remix `Headers`.
  * @param {import('@azure/functions').HttpRequestHeaders} requestHeaders - Azure HTTP Headers.
- * @param {string} [requestCookies] - The incoming request cookies.
+ * @param {Array<string>} [requestCookies] - The incoming request cookies.
  * @returns {NodeHeaders} An instance of Remix `Headers`.
  */
 function createRemixHeaders(requestHeaders, requestCookies) {
@@ -51,7 +51,7 @@ function createRemixHeaders(requestHeaders, requestCookies) {
 
 /**
  * Creates a new instance of Remix `Request` based on the incoming Azure HTTP request object.
- * @param {import('@azure/functions').HttpRequest} request - HTTP request object. Provided to your function when using HTTP Bindings.
+ * @param {import('@azure/functions').HttpRequest & { cookies?: Array<string>, isBase64Encoded?: boolean, method: import('@azure/functions').HttpMethod }} request - HTTP request object. Provided to your function when using HTTP Bindings.
  * @returns {NodeRequest} A new instance of NodeRequest
  */
 function createRemixRequest({ body, cookies, headers, isBase64Encoded, method }) {
@@ -68,6 +68,7 @@ function createRemixRequest({ body, cookies, headers, isBase64Encoded, method })
     headers: createRemixHeaders(headers, cookies),
     // Cast until reason/throwIfAborted added
     // https://github.com/mysticatea/abort-controller/issues/36
+    // @ts-ignore
     signal: controller.signal,
     body:
       body && isBase64Encoded
@@ -98,6 +99,7 @@ export function createRemixAzureAdapter({ build, getLoadContext, mode }) {
    */
   return async context => {
     const loadContext = getLoadContext?.(context);
+    // @ts-ignore
     const request = createRemixRequest(context.req);
     const response = await handler(request, loadContext);
     return sendRemixResponse(response);

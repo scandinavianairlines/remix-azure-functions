@@ -20,11 +20,12 @@
     "!src/**/*.test.js",
     "CHANGELOG.md",
     "index.js",
+    "index.d.ts",
     "README.md",
     "src/**/*.js",
-    "types/"
+    "src/**/*.d.ts"
   ],
-  "types": "types/index.d.ts",
+  "types": "./index.d.ts",
   "scripts": {
     "format": "prettier --write index.js \"src/**/*.js\"",
     "lint": "TIMING=1 eslint --fix *.js src/",
