@@ -4,7 +4,6 @@
     "allowJs": true,
     "checkJs": true,
     "declaration": true,
-    "emitDeclarationOnly": true,
     "sourceMap": false,
     "esModuleInterop": true,
     "moduleResolution": "nodenext"

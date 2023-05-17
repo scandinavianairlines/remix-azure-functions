@@ -29,9 +29,9 @@
   "scripts": {
     "format": "prettier --write index.js \"src/**/*.js\"",
     "lint": "TIMING=1 eslint --fix *.js src/",
-    "prepublishOnly": "tsc",
+    "prepublishOnly": "tsc --emitDeclarationOnly",
     "test": "cross-env NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest 'src/' --env=node --colors --bail --detectOpenHandles --errorOnDeprecated --setupFilesAfterEnv=jest-extended/all --clearMocks --noStackTrace",
-    "types": "tsc"
+    "types": "tsc --noEmit"
   },
   "peerDependencies": {
     "@remix-run/node": "^1.14.0"
