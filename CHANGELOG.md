@@ -1,3 +1,11 @@
+# @flysas-tech/create-remix-azure-adapter 1.2.0 (2023-07-12)
+
+
+### Features
+
+* **create-remix-azure-adapter:** support asynchronous getLoadContext 4792f41
+* **create-remix-azure-adapter:** support asynchronous getLoadContext adf84d0
+
 # @flysas-tech/create-remix-azure-adapter 1.1.0 (2023-05-17)
 
 
