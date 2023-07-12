@@ -98,7 +98,7 @@ export function createRemixAzureAdapter({ build, getLoadContext, mode }) {
    * @returns {Promise<import('@azure/functions').HttpResponse>} The http response.
    */
   return async context => {
-    const loadContext = getLoadContext?.(context);
+    const loadContext = await getLoadContext?.(context);
     // @ts-ignore
     const request = createRemixRequest(context.req);
     const response = await handler(request, loadContext);
