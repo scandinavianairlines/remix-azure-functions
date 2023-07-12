@@ -86,7 +86,7 @@ function createRemixRequest({ body, cookies, headers, isBase64Encoded, method })
  * response using Remix.
  * @param {object} properties - The argument object.
  * @param {import('@remix-run/server-runtime').ServerBuild} properties.build - The output of the compiler for the server build.
- * @param {(context: import('@azure/functions').Context) => import('@remix-run/server-runtime').AppLoadContext} [properties.getLoadContext] - A function that returns the value to use as `context` in route `loader` and `action` functions.
+ * @param {(context: import('@azure/functions').Context) => Promise<import('@remix-run/server-runtime').AppLoadContext>} [properties.getLoadContext] - A function that returns the value to use as `context` in route `loader` and `action` functions.
  * @param {'development' | 'production' | 'test'} properties.mode - An string that sets which mode should the server handler work.
  * @returns {import('@azure/functions').AzureFunction}  An azure function compatible http request handler
  */
