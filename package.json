@@ -1,6 +1,6 @@
 {
   "name": "@flysas-tech/create-remix-azure-adapter",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "A package that adapts requests between azure and remix",
   "keywords": [
     "function",
@@ -39,9 +39,9 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.22.10",
     "@babel/plugin-syntax-import-assertions": "^7.22.5",
-    "@flysas-tech/adg-jest-config": "1.4.0",
-    "@flysas-tech/adg-lint-staged-config": "1.3.0",
-    "@flysas-tech/eslint-config-adg": "1.3.0",
+    "@flysas-tech/adg-jest-config": "1.5.0",
+    "@flysas-tech/adg-lint-staged-config": "1.4.0",
+    "@flysas-tech/eslint-config-adg": "1.4.0",
     "@remix-run/node": "^1.19.3",
     "@tsconfig/node-lts": "^18.12.4",
     "cross-env": "^7.0.3",

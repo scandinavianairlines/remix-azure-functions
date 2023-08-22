@@ -1,3 +1,18 @@
+# @flysas-tech/create-remix-azure-adapter 1.3.0 (2023-08-22)
+
+
+### Features
+
+* **rename:** remove 'adg' prefix from package name 3b149b4
+
+
+
+
+
+### Dependencies
+
+* **@flysas-tech/adg-jest-config:** upgraded to 1.5.0
+
 ## @flysas-tech/create-remix-azure-adapter 1.2.1 (2023-07-24)
 
 
