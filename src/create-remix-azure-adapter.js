@@ -65,6 +65,7 @@ function createRemixRequest({ body, cookies, headers, isBase64Encoded, method })
   const controller = new NodeAbortController();
   return new NodeRequest(url.href, {
     method,
+    // @ts-expect-error
     headers: createRemixHeaders(headers, cookies),
     // Cast until reason/throwIfAborted added
     // https://github.com/mysticatea/abort-controller/issues/36
@@ -101,6 +102,7 @@ export function createRemixAzureAdapter({ build, getLoadContext, mode }) {
     const loadContext = await getLoadContext?.(context);
     // @ts-ignore
     const request = createRemixRequest(context.req);
+    // @ts-expect-error
     const response = await handler(request, loadContext);
     return sendRemixResponse(response);
   };
