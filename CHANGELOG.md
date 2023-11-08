@@ -1,3 +1,15 @@
+## @flysas-tech/create-remix-azure-adapter 1.3.2 (2023-11-08)
+
+
+
+
+
+### Dependencies
+
+* **@flysas-tech/adg-jest-config:** upgraded to 1.5.2
+* **@flysas-tech/adg-lint-staged-config:** upgraded to 1.4.2
+* **@flysas-tech/eslint-config-adg:** upgraded to 1.4.2
+
 ## @flysas-tech/create-remix-azure-adapter 1.3.1 (2023-10-11)
 
 
