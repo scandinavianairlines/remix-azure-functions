@@ -1,0 +1,12 @@
+{
+  "extends": ["@commitlint/config-conventional"],
+  "rules": {
+    "body-max-line-length": [2, "always", 250],
+    "references-empty": [2, "never"]
+  },
+  "parserPreset": {
+    "parserOpts": {
+      "issuePrefixes": ["([A-Z]{2,5})-([0-9]{1,4})"]
+    }
+  }
+}
