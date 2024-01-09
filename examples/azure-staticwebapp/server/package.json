@@ -1,0 +1,5 @@
+{
+  "name": "@examples/azure-functions-v4-server",
+  "main": "./src/handler.js",
+  "type": "module"
+}
