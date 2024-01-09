@@ -63,7 +63,7 @@ const BINARY_TYPES = [
  * @param {string} contentType - A content-type value to test.
  * @returns {boolean} `true` if given value is a binary type.
  */
-export function isBinaryType(contentType = '') {
+export function isBinaryType(contentType) {
   const [test] = contentType.split(';');
   return BINARY_TYPES.includes(test);
 }
