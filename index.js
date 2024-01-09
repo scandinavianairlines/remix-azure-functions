@@ -1,4 +1,4 @@
 /**
  * @package
  */
-export { createRemixAzureAdapter } from './src/create-remix-azure-adapter.js';
+export { createRequestHandler } from './src/server.js';
