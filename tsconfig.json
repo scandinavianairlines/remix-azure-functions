@@ -6,7 +6,10 @@
     "declaration": true,
     "sourceMap": false,
     "esModuleInterop": true,
-    "moduleResolution": "nodenext"
+    "moduleResolution": "nodenext",
+    "emitDeclarationOnly": true,
+    "types": ["vitest/globals"],
+    "outDir": "dist/types"
   },
   "include": ["src/**/*.js", "index.js"],
   "exclude": ["index.d.ts", "src/**/*.d.ts", "src/**/*.test.js"]
