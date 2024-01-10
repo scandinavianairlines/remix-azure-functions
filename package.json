@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
-    "@commitlint/config-conventional": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.4",
     "@commitlint/cz-commitlint": "^18.4.3",
     "@flysas-tech/adg-lint-staged-config": "^1.4.2",
     "@flysas-tech/adg-toolbox": "^1.10.3",
