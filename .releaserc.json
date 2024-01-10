@@ -32,10 +32,7 @@
           }
         ],
         "parserOpts": {
-          "noteKeywords": [
-            "BREAKING CHANGE",
-            "BREAKING CHANGES"
-          ]
+          "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
         }
       }
     ],
@@ -52,10 +49,7 @@
     [
       "@semantic-release/git",
       {
-        "assets": [
-          "package.json",
-          "changelog.md"
-        ],
+        "assets": ["package.json", "CHANGELOG.md"],
         "message": "chore(release): publish ${nextRelease.version} [skip ci]"
       }
     ]
