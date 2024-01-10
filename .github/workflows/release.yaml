@@ -1,0 +1,38 @@
+name: Release
+
+on:
+  push:
+    branches: [main, next]
+
+env:
+  SEMANTIC_RELEASE_VERSION: 22.0.8
+
+jobs:
+  release:
+    name: Semantic release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Needs to fetch historical commits in order to compare with origin/main
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: yarn
+      - name: Install dependencies
+        run: yarn --immutable
+      - name: Build library
+        run: yarn build
+        env:
+          NODE_ENV: production
+      - name: Semantic release
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_ENV: production
+          HUSKY: 0
+        run: |
+          yarn dlx --package @semantic-release/commit-analyzer --package @semantic-release/release-notes-generator --package @semantic-release/npm --package @semantic-release/github --package @semantic-release/git --package @semantic-release/changelog --package semantic-release@${{ env.SEMANTIC_RELEASE_VERSION }} semantic-release

@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    commit-message:
+      prefix: 'ci(actions): ' # the trailing space is intentional to avoid another colon by dependabot
+    schedule:
+      interval: weekly
+  - package-ecosystem: npm
+    directory: /
+    commit-message:
+      prefix: 'chore(deps): ' # the trailing space is intentional to avoid another colon by dependabot
+    schedule:
+      interval: weekly
