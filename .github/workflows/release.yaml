@@ -24,11 +24,7 @@ jobs:
           node-version: 20
           cache: yarn
       - name: Install dependencies
-        run: yarn --immutable
-      - name: Build library
-        run: yarn build
-        env:
-          NODE_ENV: production
+        run: yarn install --immutable --immutable-cache --check-cache
       - name: Semantic release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
