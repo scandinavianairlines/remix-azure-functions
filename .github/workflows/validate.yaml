@@ -22,7 +22,7 @@ jobs:
           node-version: 20
           cache: yarn
       - name: Install dependencies
-        run: yarn --immutable
+        run: yarn install --immutable --immutable-cache --check-cache
 
       - name: Validate current commit (last commit) with commitlint
         if: github.event_name == 'push'
@@ -45,7 +45,7 @@ jobs:
           node-version: 20
           cache: yarn
       - name: Install dependencies
-        run: yarn --immutable
+        run: yarn install --immutable --immutable-cache --check-cache
       - name: Run ESLint
         run: yarn lint
   unit_test:
@@ -62,6 +62,6 @@ jobs:
           node-version: 20
           cache: yarn
       - name: Install dependencies
-        run: yarn --immutable
+        run: yarn install --immutable --immutable-cache --check-cache
       - name: Run tests
         run: yarn test --run
