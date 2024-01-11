@@ -1104,21 +1104,22 @@ __metadata:
     "@azure/static-web-apps-cli": "npm:^1.1.6"
     "@remix-run/css-bundle": "npm:^2.4.1"
     "@remix-run/dev": "npm:^2.4.1"
-    "@remix-run/eslint-config": "npm:^2.3.1"
+    "@remix-run/eslint-config": "npm:^2.4.1"
     "@remix-run/node": "npm:^2.4.1"
     "@remix-run/react": "npm:^2.4.1"
     "@remix-run/serve": "npm:^2.4.1"
-    "@types/react": "npm:^18.2.20"
-    "@types/react-dom": "npm:^18.2.7"
+    "@scandinavianairlines/remix-azure-functions": "npm:^0.0.0"
+    "@types/react": "npm:^18.2.47"
+    "@types/react-dom": "npm:^18.2.18"
     "@vanilla-extract/css": "npm:^1.14.0"
     "@vanilla-extract/recipes": "npm:^0.5.1"
     azure-functions-core-tools: "npm:^4.0.5455"
-    eslint: "npm:^8.38.0"
-    isbot: "npm:^3.6.8"
+    eslint: "npm:^8.56.0"
+    isbot: "npm:^4.3.0"
     npm-run-all: "npm:^4.1.5"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
-    typescript: "npm:^5.1.6"
+    typescript: "npm:^5.3.3"
   languageName: unknown
   linkType: soft
 
@@ -1444,7 +1445,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/eslint-config@npm:^2.3.1":
+"@remix-run/eslint-config@npm:^2.4.1":
   version: 2.4.1
   resolution: "@remix-run/eslint-config@npm:2.4.1"
   dependencies:
@@ -1631,6 +1632,19 @@ __metadata:
   version: 1.6.1
   resolution: "@rushstack/eslint-patch@npm:1.6.1"
   checksum: 4c57775785718c6665bee8daea204bf2fe59c2fec6cabf0d126f01c6c170e11605b7453a089dfd5bf3fb758832b2aa7964d6b9f29007d708a3571e8ff7bcf391
+  languageName: node
+  linkType: hard
+
+"@scandinavianairlines/remix-azure-functions@npm:^0.0.0":
+  version: 0.0.0
+  resolution: "@scandinavianairlines/remix-azure-functions@npm:0.0.0"
+  peerDependencies:
+    "@azure/functions": ">=4.0.0"
+    "@remix-run/node": ">=2.0.0"
+  peerDependenciesMeta:
+    "@azure/functions":
+      optional: true
+  checksum: 4aba124084e80f91525937d7c365393296c05f6b9e0c8c9831c5b544ec8e6655a9356c57f5723a8a22ca48cd7a8eba1ee724a20c017144a628f8c6b0d584c5bd
   languageName: node
   linkType: hard
 
@@ -1895,7 +1909,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^18.2.7":
+"@types/react-dom@npm:^18.2.18":
   version: 18.2.18
   resolution: "@types/react-dom@npm:18.2.18"
   dependencies:
@@ -1904,7 +1918,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^18.2.20":
+"@types/react@npm:*, @types/react@npm:^18.2.47":
   version: 18.2.47
   resolution: "@types/react@npm:18.2.47"
   dependencies:
@@ -4299,7 +4313,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.38.0":
+"eslint@npm:^8.56.0":
   version: 8.56.0
   resolution: "eslint@npm:8.56.0"
   dependencies:
@@ -5943,10 +5957,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"isbot@npm:^3.6.8":
-  version: 3.8.0
-  resolution: "isbot@npm:3.8.0"
-  checksum: 86c7b64ed87e89c81d5723aa4d4bd45f9ebc248a864944e2bdc7fcfca8f6e7758a2fe516b132949a672460f5b7564e12dc589a50398986f30183f734a855e89c
+"isbot@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "isbot@npm:4.3.0"
+  checksum: 4f488af630143616557d39759d17a98dbac7662877cae0a19a5408eaffe7c05fcd8297e57365ba28c7b9c0d6effffab5b5485b3f75e5763e291e6106f1468bab
   languageName: node
   linkType: hard
 
@@ -9806,7 +9820,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.1.6":
+"typescript@npm:^5.3.3":
   version: 5.3.3
   resolution: "typescript@npm:5.3.3"
   bin:
@@ -9816,7 +9830,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^5.1.6#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A^5.3.3#optional!builtin<compat/typescript>":
   version: 5.3.3
   resolution: "typescript@patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"
   bin:

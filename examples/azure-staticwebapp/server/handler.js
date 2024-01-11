@@ -1,6 +1,6 @@
 import { app } from '@azure/functions';
+import { createRequestHandler } from '@scandinavianairlines/remix-azure-functions';
 
-import { createRequestHandler } from '../../../../index.js';
 import * as build from './build/index.js';
 
 /**

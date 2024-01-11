@@ -9,6 +9,7 @@ Inside the `server` folder you will find all the code needed to run the server a
 
 ## How it works
 
+This example is using the new [**Node.js v4 programming model**][model] to create an Azure Functions HTTP handler, one of the main differences with the previous version is that now the handler is being indexed by the _runtime_ based on the **package.json main property**.
 The _SSR function_ expect to receive any request with the route to render as a path parameter, so it can be used as a catch-all function. The configuration is set in the `handler.js` file with `route: '{*path}'`, an example of a request would be:
 
 ```bash
@@ -31,6 +32,6 @@ Once the dependencies are installed, you can run the server with:
 yarn dev
 ```
 
-[azure-functions]: <https://learn.microsoft.com/en-us/azure/azure-functions/>
-[model]: <https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-functions-node-js-v4-programming-model-is-generally/ba-p/3929217>
-[remix]: <https://remix.run>
+[azure-functions]: https://learn.microsoft.com/en-us/azure/azure-functions/
+[model]: https://techcommunity.microsoft.com/t5/apps-on-azure-blog/azure-functions-node-js-v4-programming-model-is-generally/ba-p/3929217
+[remix]: https://remix.run

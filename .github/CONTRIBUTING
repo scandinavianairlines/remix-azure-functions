@@ -1,0 +1,132 @@
+# Contributing to `@scandinavianairlines/remix-azure-functions`
+
+This document will familiarize you with our development process as well as _how to get your environment set up_.
+
+## Roles
+
+This document refers to contributors with the following roles:
+
+- **Collaborators**: GitHub organization team with write access. They manage issues, PRs, discussion, etc.
+- **Contributors**: you!
+
+---
+
+## Development Process
+
+### Feature Development
+
+If you have an idea for a new feature, please don't send a Pull Request, but follow this process instead:
+
+1. Contributors add a **Proposal** to [GitHub Discussions][proposals].
+2. The **Collaborators Team** accepts Proposals in the **Planning** meeting.
+3. The Collaborators assign an **Owner** to the issue.
+   - Owners are responsible for shipping the feature including all decisions for APIs, behavior, and implementation.
+   - Owners organize the work with other contributors for larger issues.
+   - Owners may be contributors from inside or outside the SAS Airline Digitalization team.
+4. Owners create an **RFC** from the Proposal and development can begin.
+5. Pairing is highly encouraged, particularly at the start.
+
+### Bug-Fix Pull Requests
+
+If you think you've found a bug we'd love a PR that fixes it! Please follow these guidelines:
+
+1. Contributors add a failing test along with the fix in a Pull Request
+   - It's ideal if the first commit is a failing test followed by the changes to the code that fix it.
+   - This is not strictly enforced but very appreciated!
+2. The Collaborators will review open bugfix PRs.
+   - Simple bugfixes will be merged on the spot.
+   - Others will be added to the Planning and assigned an Owner to review the work and get it over the finish line.
+
+Bug fix PRs without a test case might be closed immediately (some things are hard to test, we’ll use discretion here)
+
+### Bug Report Issues
+
+If you think you've found a bug but don't have the time to send a PR, please follow these guidelines:
+
+1. Create a minimal reproduction of the issue somewhere like Stackblitz, Replit, CodeSandbox, etc. that we can visit and observe the bug.
+
+2. If this is not possible (related to some hosting setup, etc.) please create a GitHub repo that we can run with clear instructions in the README to observe the bug.
+
+3. Open an issue and link to the reproduction.
+
+Bug reports without a reproduction will be immediately closed asking for a reproduction.
+
+### RFCs
+
+- Some Proposals may already be a sufficient RFC and can simply be moved to the Official RFCs Discussion category.
+- Once the RFC is posted, development can begin, though Owners are expected to consider the community's feedback to alter their direction when needed.
+
+### Collaborator's Role
+
+To help keep the repositories clean and organized, Collaborators will take the following actions:
+
+### Issues Tab
+
+- Bug reports without a reproduction will be immediately closed asking for a reproduction.
+- Issues that should be proposals will be converted to a Proposal.
+- Questions will be converted to a **Q\&A Discussion**.
+- Issues with valid reproduction will be labeled as **Verified Bugs** and added to the Roadmap by the Admins in the Roadmap Planning Meeting.
+
+### Pull Requests Tab
+
+- Features that did not go through the **Development Process** will be immediately closed and asked to open a discussion instead.
+- Bug fix PRs without a test case might be closed immediately asking for a test. (Some things are hard to test, Collaborators will use discretion here.)
+
+---
+
+## Development Setup
+
+Before you can contribute to the codebase, you will need to fork the repo. This will look a bit different depending on what type of contribution you are making:
+
+The following steps will get you set up to contribute changes to this repo:
+
+1. Fork the repo (click the <kbd>Fork</kbd> button at the top right of [this page][fork]).
+
+2. Clone your fork locally.
+
+   ```shellscript nonumber
+   # in a terminal, cd to parent directory where you want your clone to be, then
+   git clone https://github.com/<your_github_username>/remix-azure-functions.git
+   cd remix-azure-functions
+
+   # if you are making *any* code changes, make sure to checkout the dev branch
+   git checkout main
+   ```
+
+3. Install dependencies by running `yarn`. This repository uses [Yarn (version 3)][yarn_v3], so you should too. If you install using `npm`, unnecessary `package-lock.json` files will be generated.
+
+5. Verify you've got everything set up for local development by running `yarn test`.
+
+### Branches
+
+**Important:** When creating the PR in GitHub, make sure that you set the base to the correct branch.
+
+- **`main`**: is for changes to documentation and code.
+
+### Tests
+
+We use `vitest` for our testing in this project. We have a suite of unit tests next to the code they test.
+To run these sets of tests independently you'll need to run the individual script:
+
+- `yarn test --run`
+
+## Development Workflow
+
+### Commit Messages
+
+We use [Conventional Commits][conventional-commits] for our commit messages. This allows us to automatically generate changelogs and releases. To make this easier, we use [commitizen][commitizen] to help us generate these messages and [commitlint][commitlint] to validate them.
+
+## Repository Branching
+
+```
+- main   > the most recent release and current docs
+```
+
+There may be other branches for various features and experimentation, but all the magic happens from the `main` branch.
+
+[conventional-commits]: https://www.conventionalcommits.org/en/v1.0.0/
+[commitizen]: https://commitizen-tools.github.io/commitizen/
+[commitlint]: https://commitlint.js.org/#/
+[fork]: https://github.com/scandinavianairlines/remix-azure-functions
+[proposals]: https://github.com/scandinavianairlines/remix-azure-functions/discussions/categories/proposals
+[yarn_v3]: https://yarnpkg.com/getting-started/install

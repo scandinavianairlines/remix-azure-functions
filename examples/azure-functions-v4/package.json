@@ -3,12 +3,12 @@
   "private": true,
   "sideEffects": false,
   "type": "module",
-  "main": "server/src/handler.js",
+  "main": "./server/handler.js",
   "scripts": {
     "build": "remix build",
     "dev": "run-p 'dev:*'",
     "dev:watch": "remix watch",
-    "dev:function": "func start --prefix server/ --port 3030",
+    "dev:function": "func start --port 3030",
     "start": "remix-serve ./build/index.js",
     "typecheck": "tsc"
   },
@@ -17,22 +17,23 @@
     "@remix-run/node": "^2.4.1",
     "@remix-run/react": "^2.4.1",
     "@remix-run/serve": "^2.4.1",
+    "@scandinavianairlines/remix-azure-functions": "^0.0.0",
     "@vanilla-extract/css": "^1.14.0",
     "@vanilla-extract/recipes": "^0.5.1",
-    "isbot": "^3.6.8",
+    "isbot": "^4.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@azure/functions": "^4.1.0",
     "@remix-run/dev": "^2.4.1",
-    "@remix-run/eslint-config": "^2.3.1",
-    "@types/react": "^18.2.20",
-    "@types/react-dom": "^18.2.7",
+    "@remix-run/eslint-config": "^2.4.1",
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
     "azure-functions-core-tools": "^4.0.5455",
-    "eslint": "^8.38.0",
+    "eslint": "^8.56.0",
     "npm-run-all": "^4.1.5",
-    "typescript": "^5.1.6"
+    "typescript": "^5.3.3"
   },
   "engines": {
     "node": ">=18.0.0"

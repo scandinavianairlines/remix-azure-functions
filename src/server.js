@@ -14,14 +14,14 @@ installGlobals();
 
 /**
  * Checks if the incoming request is a GET or HEAD request.
- * @param {import('@azure/functions').HttpRequest} request
- * @returns {boolean}
+ * @param {import('@azure/functions').HttpRequest} request Azure HTTP request.
+ * @returns {boolean} `true` if the request is a GET or HEAD request. Otherwise, `false`.
  */
 const isGetOrHead = request => request.method === 'GET' || request.method === 'HEAD';
 
 /**
  * Parses the incoming request to a URL object.
- * @param {import('@azure/functions').HttpRequest} request - Azure HTTP request.
+ * @param {import('@azure/functions').HttpRequest} request Azure HTTP request.
  * @returns {URL} An instance of `URL`.
  */
 function urlParser(request) {
@@ -41,7 +41,7 @@ function urlParser(request) {
 async function toAzureResponse(response) {
   const contentType = response.headers.get('Content-Type') || '';
   const isBase64Encoded = isBinaryType(contentType);
-  // @TODO: Check if we can just use `response` directly?
+  // We make sure to always return a string for the body and not a stream/buffer as Azure Functions for Node.js doesn't support it, yet.
   const body = response.body
     ? await (isBase64Encoded ? readableStreamToString(response.body, 'base64') : response.text())
     : undefined;
@@ -55,9 +55,9 @@ async function toAzureResponse(response) {
 
 /**
  * Creates a new instance of Remix `Request` based on the incoming Azure HTTP request object.
- * @param {import('@azure/functions').HttpRequest} request - Azure HTTP request object.
- * @param {object} [options] - Options object.
- * @param {typeof urlParser} [options.urlParser] - Function to parse the incoming request to a URL object.
+ * @param {import('@azure/functions').HttpRequest} request Azure HTTP request object.
+ * @param {object} [options] The options object.
+ * @param {typeof urlParser} [options.urlParser] Function to parse the incoming request to a URL object.
  * @returns {Request} An instance of Remix `Request`.
  */
 function createRemixRequest(request, options = {}) {
@@ -69,6 +69,7 @@ function createRemixRequest(request, options = {}) {
     method: request.method,
     headers: request.headers,
     signal: controller.signal,
+    // eslint-disable-next-line unicorn/no-null -- Request init expects a `null` value.
     body: isGetOrHead(request) ? request.body : null,
   };
 
@@ -92,9 +93,8 @@ export function createRequestHandler(options) {
    * Creates the Remix load context, transform the incoming request to a Remix `Request` object and
    * generates a Remix `Response` object based on the incoming request. Finally, it transforms the
    * Remix `Response` object to a Azure function `response` object.
-   *
-   * @param {import('@azure/functions').HttpRequest} request
-   * @param {import('@azure/functions').InvocationContext} context
+   * @param {import('@azure/functions').HttpRequest} request Azure HTTP request.
+   * @param {import('@azure/functions').InvocationContext} context Azure function invocation context.
    * @returns {Promise<import('@azure/functions').HttpResponseInit>} A Azure Function `http response init` object.
    */
   async function functionHandler(request, context) {
