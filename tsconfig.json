@@ -4,13 +4,12 @@
     "allowJs": true,
     "checkJs": true,
     "declaration": true,
-    "sourceMap": false,
     "esModuleInterop": true,
     "moduleResolution": "nodenext",
-    "emitDeclarationOnly": true,
-    "types": ["vitest/globals"],
-    "outDir": "dist/types"
+    "outDir": "types/",
+    "sourceMap": false,
+    "types": ["vitest/globals"]
   },
-  "include": ["src/**/*.js", "index.js"],
-  "exclude": ["index.d.ts", "src/**/*.d.ts", "src/**/*.test.js"]
+  "include": ["./src/**/*.js", "index.js"],
+  "exclude": ["index.d.ts", "src/**/*.d.ts", "src/**/*.test.js", "examples/"]
 }

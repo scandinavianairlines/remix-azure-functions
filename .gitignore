@@ -158,3 +158,4 @@ __azurite_db*__.json
 appsettings.json
 local.settings.json
 examples/**/.yarn
+types/

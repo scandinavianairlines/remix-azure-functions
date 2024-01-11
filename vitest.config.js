@@ -1,5 +1,5 @@
 /**
- * @type {{ test?: import('vitest').InlineConfig }}
+ * @type {{ test: import('vitest').InlineConfig }}
  */
 export default {
   test: {
@@ -14,7 +14,7 @@ export default {
       extension: ['.js'],
       allowExternal: false,
       include: ['**/src/**'],
-      exclude: ['**/node_modules/**', '**/playground/**'],
+      exclude: ['**/node_modules/**', '**/examples/**'],
     },
   },
 };
