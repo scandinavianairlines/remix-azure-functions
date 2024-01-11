@@ -1,3 +1,10 @@
+## 1.0.1 (2024-01-11)
+
+
+### Bug Fixes
+
+* **adapter:** add support for async load context 1a923d5
+
 # 1.0.0 (2024-01-11)
 
 ### Bug Fixes
