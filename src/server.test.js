@@ -112,7 +112,7 @@ describe('server', () => {
       params: undefined,
       url: 'https://test.com',
     });
-    const mockGetLoadContext = vi.fn();
+    const mockGetLoadContext = vi.fn().mockResolvedValue({});
     const mockAzureContext = { log: vi.fn() };
     createRemixRequestHandler.mockReturnValue(mockHandler);
     const handler = createRequestHandler({

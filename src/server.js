@@ -9,7 +9,7 @@ import { isBinaryType } from './is-binary-type.js';
 installGlobals();
 
 /**
- * @typedef {(request: import('@azure/functions').HttpRequest, context: import('@azure/functions').InvocationContext) => import('@remix-run/node').AppLoadContext} GetLoadContextFn
+ * @typedef {(request: import('@azure/functions').HttpRequest, context: import('@azure/functions').InvocationContext) => Promise<import('@remix-run/node').AppLoadContext>} GetLoadContextFn
  */
 
 /**
@@ -98,7 +98,7 @@ export function createRequestHandler(options) {
    * @returns {Promise<import('@azure/functions').HttpResponseInit>} A Azure Function `http response init` object.
    */
   async function functionHandler(request, context) {
-    const loadContext = options.getLoadContext?.(request, context);
+    const loadContext = await options.getLoadContext?.(request, context);
     const remixRequest = createRemixRequest(request, { urlParser: options.urlParser });
     const remixResponse = await handler(remixRequest, loadContext);
 
