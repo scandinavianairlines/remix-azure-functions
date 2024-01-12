@@ -1,0 +1,28 @@
+{
+  "name": "@examples/azure-staticwebapp-server",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "main": "./handler.js",
+  "scripts": {
+    "dev": "func start --cors-credentials --port 3030"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.1.0",
+    "@remix-run/css-bundle": "^2.5.0",
+    "@remix-run/node": "^2.5.0",
+    "@remix-run/react": "^2.5.0",
+    "@remix-run/serve": "^2.5.0",
+    "@scandinavianairlines/remix-azure-functions": "^1.0.1",
+    "isbot": "^4.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@azure/static-web-apps-cli": "^1.1.6",
+    "azure-functions-core-tools": "^4.0.5455"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

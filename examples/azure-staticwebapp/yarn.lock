@@ -158,16 +158,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@azure/functions@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "@azure/functions@npm:4.1.0"
-  dependencies:
-    long: "npm:^4.0.0"
-    undici: "npm:^5.13.0"
-  checksum: caa611cc147f8b7cd24fbda146a396a9ff3e5fa2b989ece9da080f522841ade532ac53329e4d03c6dd949b74400f4f48a1b3035dbbc56f4206f36bbbb11b9c4b
-  languageName: node
-  linkType: hard
-
 "@azure/identity@npm:^3.1.2":
   version: 3.4.1
   resolution: "@azure/identity@npm:3.4.1"
@@ -1100,19 +1090,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@examples/azure-staticwebapp@workspace:."
   dependencies:
-    "@azure/functions": "npm:^4.1.0"
     "@azure/static-web-apps-cli": "npm:^1.1.6"
-    "@remix-run/css-bundle": "npm:^2.4.1"
-    "@remix-run/dev": "npm:^2.4.1"
-    "@remix-run/eslint-config": "npm:^2.4.1"
-    "@remix-run/node": "npm:^2.4.1"
-    "@remix-run/react": "npm:^2.4.1"
-    "@remix-run/serve": "npm:^2.4.1"
-    "@scandinavianairlines/remix-azure-functions": "npm:^0.0.0"
+    "@remix-run/css-bundle": "npm:^2.5.0"
+    "@remix-run/dev": "npm:^2.5.0"
+    "@remix-run/eslint-config": "npm:^2.5.0"
+    "@remix-run/node": "npm:^2.5.0"
+    "@remix-run/react": "npm:^2.5.0"
+    "@remix-run/serve": "npm:^2.5.0"
+    "@scandinavianairlines/remix-azure-functions": "npm:^1.0.1"
     "@types/react": "npm:^18.2.47"
     "@types/react-dom": "npm:^18.2.18"
-    "@vanilla-extract/css": "npm:^1.14.0"
-    "@vanilla-extract/recipes": "npm:^0.5.1"
     azure-functions-core-tools: "npm:^4.0.5455"
     eslint: "npm:^8.56.0"
     isbot: "npm:^4.3.0"
@@ -1122,13 +1109,6 @@ __metadata:
     typescript: "npm:^5.3.3"
   languageName: unknown
   linkType: soft
-
-"@fastify/busboy@npm:^2.0.0":
-  version: 2.1.0
-  resolution: "@fastify/busboy@npm:2.1.0"
-  checksum: f22c1e5c52dc350ddf9ba8be9f87b48d3ea5af00a37fd0a0d1e3e4b37f94d96763e514c68a350c7f570260fdd2f08b55ee090cdd879f92a03249eb0e3fd19113
-  languageName: node
-  linkType: hard
 
 "@hapi/hoek@npm:^9.0.0":
   version: 9.3.0
@@ -1364,16 +1344,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/css-bundle@npm:^2.4.1":
-  version: 2.4.1
-  resolution: "@remix-run/css-bundle@npm:2.4.1"
-  checksum: f20c0ba63d67379126fc5b42be8a4ea2905ba96ec108c587c468bb41982503fc1014a1ff55ef305f53e8452a18567628a6540b69521864666e7e5de27e6f24d0
+"@remix-run/css-bundle@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "@remix-run/css-bundle@npm:2.5.0"
+  checksum: 8d446223b1796946645106604c2d3458cba9e151ec5ebf03fbe8a5ca0df7d88cf85748250080f8ae3d5ca0ad9e12e20dba3ad60eb0fe73659e1ec25013be7a44
   languageName: node
   linkType: hard
 
-"@remix-run/dev@npm:^2.4.1":
-  version: 2.4.1
-  resolution: "@remix-run/dev@npm:2.4.1"
+"@remix-run/dev@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "@remix-run/dev@npm:2.5.0"
   dependencies:
     "@babel/core": "npm:^7.21.8"
     "@babel/generator": "npm:^7.21.5"
@@ -1385,9 +1365,9 @@ __metadata:
     "@babel/types": "npm:^7.22.5"
     "@mdx-js/mdx": "npm:^2.3.0"
     "@npmcli/package-json": "npm:^4.0.1"
-    "@remix-run/node": "npm:2.4.1"
-    "@remix-run/router": "npm:1.14.1"
-    "@remix-run/server-runtime": "npm:2.4.1"
+    "@remix-run/node": "npm:2.5.0"
+    "@remix-run/router": "npm:1.14.2"
+    "@remix-run/server-runtime": "npm:2.5.0"
     "@types/mdx": "npm:^2.0.5"
     "@vanilla-extract/integration": "npm:^6.2.0"
     arg: "npm:^5.0.1"
@@ -1429,7 +1409,7 @@ __metadata:
     tsconfig-paths: "npm:^4.0.0"
     ws: "npm:^7.4.5"
   peerDependencies:
-    "@remix-run/serve": ^2.4.1
+    "@remix-run/serve": ^2.5.0
     typescript: ^5.1.0
     vite: ^5.0.0
   peerDependenciesMeta:
@@ -1441,13 +1421,13 @@ __metadata:
       optional: true
   bin:
     remix: dist/cli.js
-  checksum: c2df048cc1021339ce201608cea9ee616eec42abccbe4f753943f4b076faad2f3af666c56ce23775625d1e9c4d9bc0f6f3c5e3c6c5a9f8005a56a0d66c6ed3f1
+  checksum: cef5f1f4f61527ae5600ba1ca5970ead6080352f77f83a503e7b6ceb6b8e8ae2697b76d0853e76eb8b81a546fc05dc992d00059888d09b82a6e6f20613a09206
   languageName: node
   linkType: hard
 
-"@remix-run/eslint-config@npm:^2.4.1":
-  version: 2.4.1
-  resolution: "@remix-run/eslint-config@npm:2.4.1"
+"@remix-run/eslint-config@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "@remix-run/eslint-config@npm:2.5.0"
   dependencies:
     "@babel/core": "npm:^7.21.8"
     "@babel/eslint-parser": "npm:^7.21.8"
@@ -1472,30 +1452,30 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: b6d154249a74fdbe813a4cb20c8175aca3ea73a9a6a24c8a6a66eff513699c571eae42330d805159843c6a24a2df2ac1ef9788d2a608c9d8290aa0361841b823
+  checksum: 1d64c6215ba5bbdc383329c851b10a2d1ba405885cf7fbb3dffef2f35fd8db8807c74a6c12ee654f9d0340a96412e37575d6434e2565c7d699aedfa1fe5e1744
   languageName: node
   linkType: hard
 
-"@remix-run/express@npm:2.4.1":
-  version: 2.4.1
-  resolution: "@remix-run/express@npm:2.4.1"
+"@remix-run/express@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@remix-run/express@npm:2.5.0"
   dependencies:
-    "@remix-run/node": "npm:2.4.1"
+    "@remix-run/node": "npm:2.5.0"
   peerDependencies:
     express: ^4.17.1
     typescript: ^5.1.0
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: cfcecca56c5af8d61ad2d6c66325c4980b4bd77bc343f83d644e3912855af053da5adee13cffddbcf2e1656ccddae9d720ce1713362565a151440372e01243dc
+  checksum: 2e7a53a95eebe342fbb9170524b2b279aefed2412acc4fb8093e5688cda69a062f9830d4243993462f457548077bebf69029fedc1fb93a90619b677ab5dd80ab
   languageName: node
   linkType: hard
 
-"@remix-run/node@npm:2.4.1, @remix-run/node@npm:^2.4.1":
-  version: 2.4.1
-  resolution: "@remix-run/node@npm:2.4.1"
+"@remix-run/node@npm:2.5.0, @remix-run/node@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "@remix-run/node@npm:2.5.0"
   dependencies:
-    "@remix-run/server-runtime": "npm:2.4.1"
+    "@remix-run/server-runtime": "npm:2.5.0"
     "@remix-run/web-fetch": "npm:^4.4.2"
     "@remix-run/web-file": "npm:^3.1.0"
     "@remix-run/web-stream": "npm:^1.1.0"
@@ -1508,18 +1488,18 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: a7c8b7788305d0d52703ec3557aa711125d69b61182cd9038d2d60bbbecd5cfcc473f6727bf2674e09f1c5f2574498856262109e1275dbd044fe73ac8f8fca8b
+  checksum: 2583cbb3a8e703d7e6ad60e65b38214dd1fb0cf4392fb4e29a9f0fe14d9aaa1ed5ac80b08518ce50f38eba8a5d930599ee59b10b1a8d70c14c238060fb21abad
   languageName: node
   linkType: hard
 
-"@remix-run/react@npm:^2.4.1":
-  version: 2.4.1
-  resolution: "@remix-run/react@npm:2.4.1"
+"@remix-run/react@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "@remix-run/react@npm:2.5.0"
   dependencies:
-    "@remix-run/router": "npm:1.14.1"
-    "@remix-run/server-runtime": "npm:2.4.1"
-    react-router: "npm:6.21.1"
-    react-router-dom: "npm:6.21.1"
+    "@remix-run/router": "npm:1.14.2"
+    "@remix-run/server-runtime": "npm:2.5.0"
+    react-router: "npm:6.21.2"
+    react-router-dom: "npm:6.21.2"
   peerDependencies:
     react: ^18.0.0
     react-dom: ^18.0.0
@@ -1527,23 +1507,23 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 5f9a2f3b82824acffa0fb81b34e1464d7cf73be76e21f5a6247b33311828e6814f9d09cfbc8177a738a85858d1ebd593848944db9c6b1a51b0324c85d7b24ab7
+  checksum: a050d0e5092d631ce5ee95e1c55ad99a3950bfc2b5c13f1cf4fdc704f8bded5c03f9f1d1a626421ea8d9cebadcc1a16ed00a8a8a902b9bee3f8e9517ae0f930e
   languageName: node
   linkType: hard
 
-"@remix-run/router@npm:1.14.1":
-  version: 1.14.1
-  resolution: "@remix-run/router@npm:1.14.1"
-  checksum: caed61639006444a66ca832f1e500bac2fcf02695183e967ff1452d3172f888f2bb40591b239c85f9003b9628383cfd4c8ef55cde800d14276905c7031c9f0b9
+"@remix-run/router@npm:1.14.2":
+  version: 1.14.2
+  resolution: "@remix-run/router@npm:1.14.2"
+  checksum: 422844e88b985f1e287301b302c6cf8169c9eea792f80d40464f97b25393bb2e697228ebd7a7b61444d5a51c5873c4a637aad20acde5886a5caf62e833c5ceee
   languageName: node
   linkType: hard
 
-"@remix-run/serve@npm:^2.4.1":
-  version: 2.4.1
-  resolution: "@remix-run/serve@npm:2.4.1"
+"@remix-run/serve@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "@remix-run/serve@npm:2.5.0"
   dependencies:
-    "@remix-run/express": "npm:2.4.1"
-    "@remix-run/node": "npm:2.4.1"
+    "@remix-run/express": "npm:2.5.0"
+    "@remix-run/node": "npm:2.5.0"
     chokidar: "npm:^3.5.3"
     compression: "npm:^1.7.4"
     express: "npm:^4.17.1"
@@ -1552,18 +1532,18 @@ __metadata:
     source-map-support: "npm:^0.5.21"
   bin:
     remix-serve: dist/cli.js
-  checksum: 554ef4401a511572203ab510d53e07a1cf9333a4d9404bb74d94251f7a8bf10a53aa29678276c761142cfa993e9e8e1391782553204b9314e6541ae8876ffc18
+  checksum: 256c069ed42b86c29af4364a65f3fdf88dfd963f6527680ae66c57a00a2d19f73e04184b197ce18fa8ab9e4f601bf45c53e3acf0b8dd597920406f1a8ebf4cfd
   languageName: node
   linkType: hard
 
-"@remix-run/server-runtime@npm:2.4.1":
-  version: 2.4.1
-  resolution: "@remix-run/server-runtime@npm:2.4.1"
+"@remix-run/server-runtime@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@remix-run/server-runtime@npm:2.5.0"
   dependencies:
-    "@remix-run/router": "npm:1.14.1"
-    "@types/cookie": "npm:^0.5.3"
+    "@remix-run/router": "npm:1.14.2"
+    "@types/cookie": "npm:^0.6.0"
     "@web3-storage/multipart-parser": "npm:^1.0.0"
-    cookie: "npm:^0.5.0"
+    cookie: "npm:^0.6.0"
     set-cookie-parser: "npm:^2.4.8"
     source-map: "npm:^0.7.3"
   peerDependencies:
@@ -1571,7 +1551,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: c57df47d413728ea870460503ab11b843e93eb4c4044b94f92ca5f382b25cc366efc0a75d74405d77f5dd62ff3c191736bb67612c67eb653b097dba525ed8cc7
+  checksum: 52986ef09458e33de4ae9d2850c9adb3e699347d84f067b58db81fc69926874848cd3e4281a3304b44ae578a916fc35b36fdd7d923ec7afc712a4438d5577dc6
   languageName: node
   linkType: hard
 
@@ -1635,16 +1615,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@scandinavianairlines/remix-azure-functions@npm:^0.0.0":
-  version: 0.0.0
-  resolution: "@scandinavianairlines/remix-azure-functions@npm:0.0.0"
+"@scandinavianairlines/remix-azure-functions@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@scandinavianairlines/remix-azure-functions@npm:1.0.1"
   peerDependencies:
     "@azure/functions": ">=4.0.0"
     "@remix-run/node": ">=2.0.0"
   peerDependenciesMeta:
     "@azure/functions":
       optional: true
-  checksum: 4aba124084e80f91525937d7c365393296c05f6b9e0c8c9831c5b544ec8e6655a9356c57f5723a8a22ca48cd7a8eba1ee724a20c017144a628f8c6b0d584c5bd
+  checksum: 64ace86b0c4d89957031d82d7dee982eab6d315dbc98d453067d54bd4a3404dc56daf1e09451c3c8a6d8aa83fbfe1b864de3a06cd6273f7164ddacea87718bd3
   languageName: node
   linkType: hard
 
@@ -1733,10 +1713,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/cookie@npm:^0.5.3":
-  version: 0.5.4
-  resolution: "@types/cookie@npm:0.5.4"
-  checksum: 44c09d55b79ccc7701876dae868a4a6a9e1291228792b81983e94ab55482eaa853dfc23dede0165d135817dca2845e48bf280f9b1f8d3401f012d410091513c0
+"@types/cookie@npm:^0.6.0":
+  version: 0.6.0
+  resolution: "@types/cookie@npm:0.6.0"
+  checksum: b883348d5bf88695fbc2c2276b1c49859267a55cae3cf11ea1dccc1b3be15b466e637ce3242109ba27d616c77c6aa4efe521e3d557110b4fdd9bc332a12445c2
   languageName: node
   linkType: hard
 
@@ -2166,15 +2146,6 @@ __metadata:
   version: 1.0.3
   resolution: "@vanilla-extract/private@npm:1.0.3"
   checksum: 5f27238d711fc190146869cb76258328d8d8c09bf4fca9df65168ce13704a5c78750824eb469fa961a2ab1cfefca43c37607d755b8a4aa937c8dd7df478036df
-  languageName: node
-  linkType: hard
-
-"@vanilla-extract/recipes@npm:^0.5.1":
-  version: 0.5.1
-  resolution: "@vanilla-extract/recipes@npm:0.5.1"
-  peerDependencies:
-    "@vanilla-extract/css": ^1.0.0
-  checksum: 20936fd318fe005b1a637bd1459d5ce596c14e3e73402fe6f130007619bf3d2765cd1f3e260a45d141f9c62f2c274f85378d004d03a9f68c328f5f98df7b9ec8
   languageName: node
   linkType: hard
 
@@ -3218,6 +3189,13 @@ __metadata:
   version: 0.5.0
   resolution: "cookie@npm:0.5.0"
   checksum: aae7911ddc5f444a9025fbd979ad1b5d60191011339bce48e555cb83343d0f98b865ff5c4d71fecdfb8555a5cafdc65632f6fce172f32aaf6936830a883a0380
+  languageName: node
+  linkType: hard
+
+"cookie@npm:^0.6.0":
+  version: 0.6.0
+  resolution: "cookie@npm:0.6.0"
+  checksum: c1f8f2ea7d443b9331680598b0ae4e6af18a618c37606d1bbdc75bec8361cce09fe93e727059a673f2ba24467131a9fb5a4eec76bb1b149c1b3e1ccb268dc583
   languageName: node
   linkType: hard
 
@@ -6435,13 +6413,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"long@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "long@npm:4.0.0"
-  checksum: 8296e2ba7bab30f9cfabb81ebccff89c819af6a7a78b4bb5a70ea411aa764ee0532f7441381549dfa6a1a98d72abe9138bfcf99f4fa41238629849bc035b845b
-  languageName: node
-  linkType: hard
-
 "longest-streak@npm:^3.0.0":
   version: 3.1.0
   resolution: "longest-streak@npm:3.1.0"
@@ -8504,27 +8475,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-router-dom@npm:6.21.1":
-  version: 6.21.1
-  resolution: "react-router-dom@npm:6.21.1"
+"react-router-dom@npm:6.21.2":
+  version: 6.21.2
+  resolution: "react-router-dom@npm:6.21.2"
   dependencies:
-    "@remix-run/router": "npm:1.14.1"
-    react-router: "npm:6.21.1"
+    "@remix-run/router": "npm:1.14.2"
+    react-router: "npm:6.21.2"
   peerDependencies:
     react: ">=16.8"
     react-dom: ">=16.8"
-  checksum: 2d75bd889828fa5516ad076b44506656d826c365645e7079138cd0ef899db28a1b212f708a6c6e3b543ae11b96b2031f01201cc2fe1733dd4d9c5cbdd4d734ef
+  checksum: 24d1470e68f11369776c623b8873c8cf0af476d102317cb3aa6b13b48c86908f10a6e51209ce24dccf40e429538d4e23fda796c190f2ff98f894cb476d51f44d
   languageName: node
   linkType: hard
 
-"react-router@npm:6.21.1":
-  version: 6.21.1
-  resolution: "react-router@npm:6.21.1"
+"react-router@npm:6.21.2":
+  version: 6.21.2
+  resolution: "react-router@npm:6.21.2"
   dependencies:
-    "@remix-run/router": "npm:1.14.1"
+    "@remix-run/router": "npm:1.14.2"
   peerDependencies:
     react: ">=16.8"
-  checksum: 1220cc75e0c915a26dde9dbb6509a8f0b0163d96e5ad591af91d9bb5a92a18401718f8d872a03d1cb366e7a6216c165a5cadd12375adf97943f37d7f5c487a90
+  checksum: 08701bfe9e7b860442dd0f3c6e36d3ea6106d86db5ec9da930fd56d5782a13b82612826de7dd31bb38832f3fa76437d7a0ca36e63a76256f62d5b738f529a48c
   languageName: node
   linkType: hard
 
@@ -9863,15 +9834,6 @@ __metadata:
   version: 5.26.5
   resolution: "undici-types@npm:5.26.5"
   checksum: 0097779d94bc0fd26f0418b3a05472410408877279141ded2bd449167be1aed7ea5b76f756562cb3586a07f251b90799bab22d9019ceba49c037c76445f7cddd
-  languageName: node
-  linkType: hard
-
-"undici@npm:^5.13.0":
-  version: 5.28.2
-  resolution: "undici@npm:5.28.2"
-  dependencies:
-    "@fastify/busboy": "npm:^2.0.0"
-  checksum: 07ab8b812c7322f5faba55268562e3626463171ace8a2e5861e5793e69f8901e809bcdeb4013126fe8d1602baac247ea3c0c996073dbf9709516295b0a4dd18f
   languageName: node
   linkType: hard
 
