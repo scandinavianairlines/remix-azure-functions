@@ -1,6 +1,6 @@
 # Remix Adapter for Azure Functions
 
-[![js-standard-style](https://img.shields.io/badge/standard-javascript-fdbe15.svg?logo=javascript&logoColor=fdbe15&logoWidth=20&style=flat-square)](https://github.com/feross/standard) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?logo=prettier&style=flat-square)](https://github.com/prettier/prettier) [![npm](https://img.shields.io/npm/v/create-remix-azure-adapter?logo=npm&style=flat-square)](https://www.npmjs.com/package/@scandinavianairlines/remix-azure-functions)
+[![js-standard-style](https://img.shields.io/badge/standard-javascript-fdbe15.svg?logo=javascript&logoColor=fdbe15&logoWidth=20&style=flat-square)](https://github.com/feross/standard) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?logo=prettier&style=flat-square)](https://github.com/prettier/prettier) [![npm](https://img.shields.io/npm/v/@scandinavianairlines/remix-azure-functions?logo=npm&style=flat-square)](https://www.npmjs.com/package/@scandinavianairlines/remix-azure-functions)
 
 - [Remix Adapter for Azure Functions](#remix-adapter-for-azure-functions)
   - [Usage](#usage)
