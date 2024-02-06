@@ -73,7 +73,7 @@
     "eslint-plugin-storybook": "^0.6.15",
     "eslint-plugin-unicorn": "^50.0.1",
     "eslint-plugin-vitest": "^0.3.20",
-    "husky": "^8.0.3",
+    "husky": "^9.0.10",
     "inquirer": "^8.2.6",
     "lint-staged": "^15.2.0",
     "npm-run-all": "^4.1.5",
