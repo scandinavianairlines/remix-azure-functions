@@ -2920,8 +2920,8 @@ __metadata:
   linkType: hard
 
 "eslint-plugin-unicorn@npm:^51.0.0":
-  version: 51.0.0
-  resolution: "eslint-plugin-unicorn@npm:51.0.0"
+  version: 51.0.1
+  resolution: "eslint-plugin-unicorn@npm:51.0.1"
   dependencies:
     "@babel/helper-validator-identifier": "npm:^7.22.20"
     "@eslint-community/eslint-utils": "npm:^4.4.0"
@@ -2941,7 +2941,7 @@ __metadata:
     strip-indent: "npm:^3.0.0"
   peerDependencies:
     eslint: ">=8.56.0"
-  checksum: cf875cf673bbc3e515bce5248f232d4a7a548d8c649f5cf653822a612e84532b4f190d9564a191c44054dcf8b7811f7e2bf64da39885a1a9ec123745237c818e
+  checksum: cea770332423d49d0cd86ca96055be7f14895e1d0a9fb24c8ed4f18a6e1eeff362d4881c46e85d85c37938bb85a6eeae7e347bcf7a3bb7307a8dd309651e0adf
   languageName: node
   linkType: hard
 
