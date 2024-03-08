@@ -49,7 +49,7 @@
   },
   "devDependencies": {
     "@azure/functions": "^4.2.0",
-    "@commitlint/cli": "^18.6.0",
+    "@commitlint/cli": "^19.0.3",
     "@commitlint/config-conventional": "^18.6.0",
     "@commitlint/cz-commitlint": "^19.0.3",
     "@remix-run/node": "^2.6.0",
