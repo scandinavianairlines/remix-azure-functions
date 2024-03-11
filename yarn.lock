@@ -851,10 +851,10 @@ __metadata:
   linkType: hard
 
 "@remix-run/node@npm:^2.6.0":
-  version: 2.7.2
-  resolution: "@remix-run/node@npm:2.7.2"
+  version: 2.8.1
+  resolution: "@remix-run/node@npm:2.8.1"
   dependencies:
-    "@remix-run/server-runtime": "npm:2.7.2"
+    "@remix-run/server-runtime": "npm:2.8.1"
     "@remix-run/web-fetch": "npm:^4.4.2"
     "@remix-run/web-file": "npm:^3.1.0"
     "@remix-run/web-stream": "npm:^1.1.0"
@@ -867,22 +867,22 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: fc567c7bb4e0f8b33368dcbfd3f3275a7a2bcbc59d60ef5ac822334ae829b3284deca866314e0173040e46033fcc7719c4eb6c190b68b754528b7dc717854bc5
+  checksum: f637678a8a566f144d17c553c5b16b55ec5fa5873f2c46094c8b6e5b09a8bfa817984be8c0bfcd410460c79b70458ae9371b142214f8c6996282901740619fb7
   languageName: node
   linkType: hard
 
-"@remix-run/router@npm:1.15.1":
-  version: 1.15.1
-  resolution: "@remix-run/router@npm:1.15.1"
-  checksum: d262285d155f80779894ee1d9ef07e35421986ba2546378dfe0e3b09397ce71becb6a4677e9efcd4155e2bd3f9f7f7ecbc110cd99bacee6dd7d3e5ce51b7caa8
+"@remix-run/router@npm:1.15.3":
+  version: 1.15.3
+  resolution: "@remix-run/router@npm:1.15.3"
+  checksum: 43d402b4ad3dff6dee5c1bc0822aeeb4d885d11c74c45fca7f2f4d7e57853fddbbb813c372919bb3fcc63f95fbcffdd1d4ac1c406857ea07b9d09a09d0562c8e
   languageName: node
   linkType: hard
 
-"@remix-run/server-runtime@npm:2.7.2":
-  version: 2.7.2
-  resolution: "@remix-run/server-runtime@npm:2.7.2"
+"@remix-run/server-runtime@npm:2.8.1":
+  version: 2.8.1
+  resolution: "@remix-run/server-runtime@npm:2.8.1"
   dependencies:
-    "@remix-run/router": "npm:1.15.1"
+    "@remix-run/router": "npm:1.15.3"
     "@types/cookie": "npm:^0.6.0"
     "@web3-storage/multipart-parser": "npm:^1.0.0"
     cookie: "npm:^0.6.0"
@@ -893,7 +893,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 26f2ab50d28ab8769eb4f9b5c0e3fb650c14dcfc9d9d5079704108a714c5c1d61e8947cfb32b72825c2db059b2b0a5f6a3ce2b81cd66d9d01767544b68845ed2
+  checksum: 28d4fa31bd9c47d4bbdcf03d524e5aad8fe0d5379474f8ded7188d3119a12c99aeaaa8336bf68f29eda54540dce82d4bcb8d2009e5eeff51afb46b155d3ce8d9
   languageName: node
   linkType: hard
 
