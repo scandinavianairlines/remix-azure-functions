@@ -1177,9 +1177,9 @@ __metadata:
   linkType: hard
 
 "@tsconfig/node-lts@npm:^20.1.1":
-  version: 20.1.1
-  resolution: "@tsconfig/node-lts@npm:20.1.1"
-  checksum: 3ff342657ba6a9ff29eb6c673e2c95abc5e11ce70b4829bec847bfa292a2e00ee985d87e8b8aef8885ce3aa07c9e798182b38ab8a8537695c7cbb1cd1e725b5c
+  version: 20.1.2
+  resolution: "@tsconfig/node-lts@npm:20.1.2"
+  checksum: cc125781f56477a6cf55a3775e52994581bdeaa7b7383b2e6acc8df0bb3ac9a5d971bbd88abb81a1394329ee6a7bc18e744368a17033a1d1dae8f9ae223c10b9
   languageName: node
   linkType: hard
 
