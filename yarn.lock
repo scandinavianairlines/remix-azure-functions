@@ -240,11 +240,11 @@ __metadata:
   linkType: hard
 
 "@commitlint/cz-commitlint@npm:^19.0.3":
-  version: 19.0.3
-  resolution: "@commitlint/cz-commitlint@npm:19.0.3"
+  version: 19.2.0
+  resolution: "@commitlint/cz-commitlint@npm:19.2.0"
   dependencies:
     "@commitlint/ensure": "npm:^19.0.3"
-    "@commitlint/load": "npm:^19.0.3"
+    "@commitlint/load": "npm:^19.2.0"
     "@commitlint/types": "npm:^19.0.3"
     chalk: "npm:^5.3.0"
     lodash.isplainobject: "npm:^4.0.6"
@@ -252,7 +252,7 @@ __metadata:
   peerDependencies:
     commitizen: ^4.0.3
     inquirer: ^9.0.0
-  checksum: c14707fba85e5687a516f58be1edc7b5fe79bbdf444e0fc9452be2ecbae73bb2f454853950ba3ba602d5658c6b8061ec368b64fc563d92a34949b4baab6a2c39
+  checksum: 0137f43d12eaa876d83e8e20f9fdac0cc229845b921cce59b0c36bcf74b823cd92acd24f65c02e59d3693a72e214b96d7013158c591087260524767e28687da2
   languageName: node
   linkType: hard
 
@@ -336,24 +336,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/load@npm:^19.0.3":
-  version: 19.0.3
-  resolution: "@commitlint/load@npm:19.0.3"
-  dependencies:
-    "@commitlint/config-validator": "npm:^19.0.3"
-    "@commitlint/execute-rule": "npm:^19.0.0"
-    "@commitlint/resolve-extends": "npm:^19.0.3"
-    "@commitlint/types": "npm:^19.0.3"
-    chalk: "npm:^5.3.0"
-    cosmiconfig: "npm:^8.3.6"
-    cosmiconfig-typescript-loader: "npm:^5.0.0"
-    lodash.isplainobject: "npm:^4.0.6"
-    lodash.merge: "npm:^4.6.2"
-    lodash.uniq: "npm:^4.5.0"
-  checksum: 6827337fad156dc6e9daa0e0b55d0b2142cdaa0f9a31e06c048812e0af862334576441346bab89f7acf22c9ef794f1450dc92acc694a748c2234f4071cb0e3c2
-  languageName: node
-  linkType: hard
-
 "@commitlint/load@npm:^19.2.0":
   version: 19.2.0
   resolution: "@commitlint/load@npm:19.2.0"
@@ -414,20 +396,6 @@ __metadata:
     resolve-from: "npm:^5.0.0"
     resolve-global: "npm:^1.0.0"
   checksum: ef321ae425385e720763019a1dcf39b5daf65a661f6af43d69b7aad04eda21ce43487c7552b65f5611c96b45bfefabe63c9eaef20352f223812b5c9d489a600a
-  languageName: node
-  linkType: hard
-
-"@commitlint/resolve-extends@npm:^19.0.3":
-  version: 19.0.3
-  resolution: "@commitlint/resolve-extends@npm:19.0.3"
-  dependencies:
-    "@commitlint/config-validator": "npm:^19.0.3"
-    "@commitlint/types": "npm:^19.0.3"
-    global-directory: "npm:^4.0.1"
-    import-meta-resolve: "npm:^4.0.0"
-    lodash.mergewith: "npm:^4.6.2"
-    resolve-from: "npm:^5.0.0"
-  checksum: b60199b094c5f5c69950db33b44c7e6efc070deb2eb161111cf9c45bb1a14e78b3d53ca34c20c966602b011b57ef8b1751ec857759d034295da6d41f7476e1ef
   languageName: node
   linkType: hard
 
