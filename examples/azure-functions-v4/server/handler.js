@@ -3,6 +3,8 @@ import { createRequestHandler } from '@scandinavianairlines/remix-azure-function
 
 import * as build from './build/index.js';
 
+app.setup({ enableHttpStream: true });
+
 app.http('ssr', {
   methods: ['GET', 'POST', 'DELETE', 'HEAD', 'PATCH', 'PUT', 'OPTIONS', 'TRACE', 'CONNECT'],
   authLevel: 'function',
