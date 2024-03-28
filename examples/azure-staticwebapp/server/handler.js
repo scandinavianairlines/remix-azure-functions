@@ -14,6 +14,8 @@ function getLoadContext(request, context) {
   return { example: true };
 }
 
+app.setup({ enableHttpStream: true });
+
 app.http('ssr', {
   methods: ['GET', 'POST', 'DELETE', 'HEAD', 'PATCH', 'PUT', 'OPTIONS', 'TRACE', 'CONNECT'],
   authLevel: 'function',
