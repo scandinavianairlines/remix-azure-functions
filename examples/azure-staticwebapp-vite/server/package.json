@@ -1,0 +1,33 @@
+{
+  "name": "@examples/azure-staticwebapp-vite-server",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "main": "./index.js",
+  "files": [
+    "index.js",
+    "build",
+    "host.json"
+  ],
+  "scripts": {
+    "dev": "func start --cors-credentials --port 3030",
+    "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint ."
+  },
+  "dependencies": {
+    "@azure/functions": "^4.4.0",
+    "@remix-run/node": "^2.8.1",
+    "@remix-run/react": "^2.8.1",
+    "@scandinavianairlines/remix-azure-functions": "^1.0.1",
+    "isbot": "^5.1.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@azure/static-web-apps-cli": "^1.1.7",
+    "azure-functions-core-tools": "^4.0.5611",
+    "vite": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
