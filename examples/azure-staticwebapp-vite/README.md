@@ -42,7 +42,7 @@ First, we need to build the application with `yarn build`, install production de
 ```bash
 cd server
 yarn workspaces focus --production
-cp build/server/index.js ./build/server/index.js
+cp ../build/server/index.js ./build/server/index.js
 ```
 
 This is required as the server output must be part of the artifact uplaoded as an Azure Function by the _swa cli_. The `swa-cli.config.json` file has setup the path for the `outputLocation` to be the `build/client` folder, which is the default output location for the Vite build.
