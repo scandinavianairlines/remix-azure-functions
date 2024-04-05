@@ -22,14 +22,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@azure/functions@npm:^4.3.0":
-  version: 4.3.0
-  resolution: "@azure/functions@npm:4.3.0"
+"@azure/functions@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "@azure/functions@npm:4.4.0"
   dependencies:
     cookie: "npm:^0.6.0"
     long: "npm:^4.0.0"
     undici: "npm:^5.13.0"
-  checksum: 1927e856d1165e98fbee6ade69a8b8fe3853cc53084708db87270558e5202b03116a0fd58ab8cc14ea40a85a86877fa1e2401541c3581bf83a68f801800ba01a
+  checksum: 8f7a856d8356541b8cba0628efca62eac87eeb3c050e2473663120eb1e9feb236af911cdc481c63a11b6b8b68359d7f617633fac1570bcd33fc86f3aad4bd899
   languageName: node
   linkType: hard
 
@@ -675,13 +675,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fastify/busboy@npm:^2.0.0":
-  version: 2.1.0
-  resolution: "@fastify/busboy@npm:2.1.0"
-  checksum: f22c1e5c52dc350ddf9ba8be9f87b48d3ea5af00a37fd0a0d1e3e4b37f94d96763e514c68a350c7f570260fdd2f08b55ee090cdd879f92a03249eb0e3fd19113
-  languageName: node
-  linkType: hard
-
 "@humanwhocodes/config-array@npm:^0.11.14":
   version: 0.11.14
   resolution: "@humanwhocodes/config-array@npm:0.11.14"
@@ -1070,7 +1063,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@scandinavianairlines/remix-azure-functions@workspace:."
   dependencies:
-    "@azure/functions": "npm:^4.3.0"
+    "@azure/functions": "npm:^4.4.0"
     "@commitlint/cli": "npm:^19.2.1"
     "@commitlint/config-conventional": "npm:^19.1.0"
     "@commitlint/cz-commitlint": "npm:^19.2.0"
@@ -1085,7 +1078,7 @@ __metadata:
     eslint-import-resolver-alias: "npm:^1.1.2"
     eslint-plugin-disable: "npm:^2.0.3"
     eslint-plugin-import: "npm:^2.29.1"
-    eslint-plugin-jsdoc: "npm:^48.2.2"
+    eslint-plugin-jsdoc: "npm:^48.2.3"
     eslint-plugin-n: "npm:^16.6.2"
     eslint-plugin-node: "npm:^11.1.0"
     eslint-plugin-prettier: "npm:^5.1.3"
@@ -1093,16 +1086,16 @@ __metadata:
     eslint-plugin-security-node: "npm:^1.1.4"
     eslint-plugin-sort-destructure-keys: "npm:^1.5.0"
     eslint-plugin-storybook: "npm:^0.8.0"
-    eslint-plugin-unicorn: "npm:^51.0.1"
-    eslint-plugin-vitest: "npm:^0.4.0"
+    eslint-plugin-unicorn: "npm:^52.0.0"
+    eslint-plugin-vitest: "npm:^0.4.1"
     husky: "npm:^9.0.11"
-    inquirer: "npm:^9.2.16"
+    inquirer: "npm:^9.2.17"
     lint-staged: "npm:^15.2.2"
     npm-run-all: "npm:^4.1.5"
     pinst: "npm:^3.0.0"
     prettier: "npm:^3.2.5"
     ramda: "npm:^0.29.1"
-    typescript: "npm:^5.4.3"
+    typescript: "npm:^5.4.4"
     vitest: "npm:^1.4.0"
   peerDependencies:
     "@azure/functions": ">=4.0.0"
@@ -2869,9 +2862,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsdoc@npm:^48.2.2":
-  version: 48.2.2
-  resolution: "eslint-plugin-jsdoc@npm:48.2.2"
+"eslint-plugin-jsdoc@npm:^48.2.3":
+  version: 48.2.3
+  resolution: "eslint-plugin-jsdoc@npm:48.2.3"
   dependencies:
     "@es-joy/jsdoccomment": "npm:~0.42.0"
     are-docs-informative: "npm:^0.0.2"
@@ -2884,7 +2877,7 @@ __metadata:
     spdx-expression-parse: "npm:^4.0.0"
   peerDependencies:
     eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
-  checksum: 337f998b592b2722b6ccf00f5fce9b278419270fe73df9f39df6f06301d1d24cc2aca995e7617880f2d1429f10d816fd1d35a78735f26a99b7a2f1f88091549e
+  checksum: f7ab4dc3fcac320fa11777c84bc5c30aa6e68b1121c5a11e7c00a37d1e24c6599a8addb2ae5f0c2f90cb92713e9010640ace7f21962e1e946a14fd70fe4a0b59
   languageName: node
   linkType: hard
 
@@ -2986,9 +2979,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-unicorn@npm:^51.0.1":
-  version: 51.0.1
-  resolution: "eslint-plugin-unicorn@npm:51.0.1"
+"eslint-plugin-unicorn@npm:^52.0.0":
+  version: 52.0.0
+  resolution: "eslint-plugin-unicorn@npm:52.0.0"
   dependencies:
     "@babel/helper-validator-identifier": "npm:^7.22.20"
     "@eslint-community/eslint-utils": "npm:^4.4.0"
@@ -3008,11 +3001,11 @@ __metadata:
     strip-indent: "npm:^3.0.0"
   peerDependencies:
     eslint: ">=8.56.0"
-  checksum: cea770332423d49d0cd86ca96055be7f14895e1d0a9fb24c8ed4f18a6e1eeff362d4881c46e85d85c37938bb85a6eeae7e347bcf7a3bb7307a8dd309651e0adf
+  checksum: 69b8aeee04806b808a534fe5484ad75ee9feec6078aad90651d7ce7216e2bd14980fec5a2e05fd800b874406a54240af66f04ab83023a7f1fe67397b6dc4c032
   languageName: node
   linkType: hard
 
-"eslint-plugin-vitest@npm:^0.4.0":
+"eslint-plugin-vitest@npm:^0.4.1":
   version: 0.4.1
   resolution: "eslint-plugin-vitest@npm:0.4.1"
   dependencies:
@@ -3983,7 +3976,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inquirer@npm:^9.2.16":
+"inquirer@npm:^9.2.17":
   version: 9.2.17
   resolution: "inquirer@npm:9.2.17"
   dependencies:
@@ -6793,23 +6786,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.4.3":
-  version: 5.4.3
-  resolution: "typescript@npm:5.4.3"
+"typescript@npm:^5.4.4":
+  version: 5.4.4
+  resolution: "typescript@npm:5.4.4"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: de4c69f49a7ad4b1ea66a6dcc8b055ac34eb56af059a069d8988dd811c5e649be07e042e5bf573e8d0ac3ec2f30e6c999aa651cd09f6e9cbc6113749e8b6be20
+  checksum: bade322d88fd93c8179e262aca9ba7f7b4417c09117879819c87946578c782ab123e3acb4733046a6e38714c47ef927360045a1f9292a1bff3a05a6577d27ca2
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^5.4.3#optional!builtin<compat/typescript>":
-  version: 5.4.3
-  resolution: "typescript@patch:typescript@npm%3A5.4.3#optional!builtin<compat/typescript>::version=5.4.3&hash=e012d7"
+"typescript@patch:typescript@npm%3A^5.4.4#optional!builtin<compat/typescript>":
+  version: 5.4.4
+  resolution: "typescript@patch:typescript@npm%3A5.4.4#optional!builtin<compat/typescript>::version=5.4.4&hash=e012d7"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 3abea475798fdf7ee46e75dafc50c85f30fd1e7061559ec2af61646f23d16c91742703f04f0ac55be52f58ca05c02f77404b7b94bbad16278c9a54c9eeb4f4ea
+  checksum: 65e8bff94e2588cd45f6349fed214863840ead79f2206be185ff9ed3e880ce9e1ef51390ab65c16506a5b1e9e65a1eb566278afb158e7b6c5ceb651a30f17ece
   languageName: node
   linkType: hard
 
@@ -6839,12 +6832,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:^5.13.0":
-  version: 5.28.4
-  resolution: "undici@npm:5.28.4"
-  dependencies:
-    "@fastify/busboy": "npm:^2.0.0"
-  checksum: a666a9f5ac4270c659fafc33d78b6b5039a0adbae3e28f934774c85dcc66ea91da907896f12b414bd6f578508b44d5dc206fa636afa0e49a4e1c9e99831ff065
+"undici@npm:>=5.28.4":
+  version: 6.11.1
+  resolution: "undici@npm:6.11.1"
+  checksum: 129480684630e5723b7f4a946c1d9f8120f9b5697cb2032d791d1e3d2898a90eed0ed63c6ef5641502569dca0112759948564354a932c8172fc96845aaf2dd28
   languageName: node
   linkType: hard
 
