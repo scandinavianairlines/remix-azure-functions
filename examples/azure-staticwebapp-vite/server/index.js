@@ -1,19 +1,21 @@
 import { app } from '@azure/functions';
 import { createRequestHandler } from '@scandinavianairlines/remix-azure-functions';
 
-const build =
-  process.env.NODE_ENV === 'production'
-    ? await import('./build/server/index.js')
-    : await import('vite')
-        .then(vite =>
-          vite.createServer({
-            root: '../',
-            server: {
-              middlewareMode: true,
-            },
-          })
-        )
-        .then(server => server.ssrLoadModule('virtual:remix/server-build'));
+import * as build from './build/server/index.js';
+
+// @Note: for local development, we can use Vite to get the server build but we need an extra step to get SWA to work with Vite.
+// process.env.NODE_ENV === 'production'
+//     ? await import('./build/server/index.js')
+//     : await import('vite')
+//         .then(vite =>
+//           vite.createServer({
+//             root: '../',
+//             server: {
+//               middlewareMode: true,
+//             },
+//           })
+//         )
+//         .then(server => server.ssrLoadModule('virtual:remix/server-build'));
 
 /**
  * This function is called on every request to determine the application's load context.
