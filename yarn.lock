@@ -2883,8 +2883,8 @@ __metadata:
   linkType: hard
 
 "eslint-plugin-n@npm:^17.0.0":
-  version: 17.0.0
-  resolution: "eslint-plugin-n@npm:17.0.0"
+  version: 17.2.0
+  resolution: "eslint-plugin-n@npm:17.2.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.4.0"
     enhanced-resolve: "npm:^5.15.0"
@@ -2892,12 +2892,11 @@ __metadata:
     get-tsconfig: "npm:^4.7.0"
     globals: "npm:^14.0.0"
     ignore: "npm:^5.2.4"
-    is-builtin-module: "npm:^3.2.1"
     minimatch: "npm:^9.0.0"
     semver: "npm:^7.5.3"
   peerDependencies:
     eslint: ">=8.23.0"
-  checksum: 19a7b00e962a3739dbccd93aeeeb1beb2f24c37b88bd8867aafafec45e92e901b2d436327dc1ab4521874e915b6cc7e29d811ea1c46ae40c55eddcba5ff59b37
+  checksum: 85cf4f51cf86fe3ea3624d6cad03957ae701a741e6bb0308cad9c07ff0ca4af8a2cdefa1dc403a06ae06d67f9b2acb8a4660a89ef8f1a17dcd401077c486663a
   languageName: node
   linkType: hard
 
