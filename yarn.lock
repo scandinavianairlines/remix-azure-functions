@@ -1101,7 +1101,7 @@ __metadata:
     npm-run-all: "npm:^4.1.5"
     pinst: "npm:^3.0.0"
     prettier: "npm:^3.2.5"
-    ramda: "npm:^0.29.1"
+    ramda: "npm:^0.30.0"
     typescript: "npm:^5.4.4"
     vitest: "npm:^1.4.0"
   peerDependencies:
@@ -5671,10 +5671,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ramda@npm:^0.29.1":
-  version: 0.29.1
-  resolution: "ramda@npm:0.29.1"
-  checksum: 5824249efa18f3c013ea0bae6cdcc167ef357fff5441586b7ad98759e902b1397297d92b50bdc317f49fe73fa6b0e17f806f4d0f7a95270f05c25afa733a8fc5
+"ramda@npm:^0.30.0":
+  version: 0.30.0
+  resolution: "ramda@npm:0.30.0"
+  checksum: 18112bc9328bbbdc7b1e59ad5e548e7636813defe00446a083720d7fe8247df23b9b049348f7a10edeec0d2be6813fc19427a5cff792f6e1404079f4136d75f8
   languageName: node
   linkType: hard
 
