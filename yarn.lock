@@ -1091,7 +1091,7 @@ __metadata:
     eslint-plugin-prettier: "npm:^5.1.3"
     eslint-plugin-promise: "npm:^6.1.1"
     eslint-plugin-security-node: "npm:^1.1.4"
-    eslint-plugin-sort-destructure-keys: "npm:^1.5.0"
+    eslint-plugin-sort-destructure-keys: "npm:^2.0.0"
     eslint-plugin-storybook: "npm:^0.8.0"
     eslint-plugin-unicorn: "npm:^52.0.0"
     eslint-plugin-vitest: "npm:^0.4.1"
@@ -2959,14 +2959,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-sort-destructure-keys@npm:^1.5.0":
-  version: 1.5.0
-  resolution: "eslint-plugin-sort-destructure-keys@npm:1.5.0"
+"eslint-plugin-sort-destructure-keys@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "eslint-plugin-sort-destructure-keys@npm:2.0.0"
   dependencies:
     natural-compare-lite: "npm:^1.4.0"
   peerDependencies:
-    eslint: 3 - 8
-  checksum: 9b32eb80121d299296334d29a77655ed6cc8c49513fe13c349b0c29fa5a92a1b8bb8cba7b9b7962b93ccd194eb7621fef9d635e0676cb1f629740c8b2d21f979
+    eslint: 5 - 9
+  checksum: c339a0f299faf79e74aa4422c7531c0153291292db2cd238e025c6693a501e6d2196b516b5507cf32ff96e306f5dec4b9bc661b341f1fd91c4453a5a5954adac
   languageName: node
   linkType: hard
 
