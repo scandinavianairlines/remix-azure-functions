@@ -32,7 +32,7 @@ The _proxy_ configuration is set in the `staticwebapp.config.json` file with the
 }
 ```
 
-The above configuration will forward all the requests to the `/api/ssr` function, which is defined in the `server/handler.js` file.
+The above configuration will forward all the requests to the `/api/ssr` function, which is defined in the `server/index.js` file.
 
 ## How to deploy to Azure Static Web Apps
 
