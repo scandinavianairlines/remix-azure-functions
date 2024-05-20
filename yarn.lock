@@ -895,10 +895,10 @@ __metadata:
   linkType: hard
 
 "@remix-run/node@npm:^2.9.1":
-  version: 2.9.1
-  resolution: "@remix-run/node@npm:2.9.1"
+  version: 2.9.2
+  resolution: "@remix-run/node@npm:2.9.2"
   dependencies:
-    "@remix-run/server-runtime": "npm:2.9.1"
+    "@remix-run/server-runtime": "npm:2.9.2"
     "@remix-run/web-fetch": "npm:^4.4.2"
     "@web3-storage/multipart-parser": "npm:^1.0.0"
     cookie-signature: "npm:^1.1.0"
@@ -910,22 +910,22 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 0b831d4e21fa1f9b4062cbd068e4428c11e844d89ff17282cbc5f6ff7d636b96e6565b6759c88244d46c2a82205cb28d3846d6477ad71c0ef33967c1a19f3601
+  checksum: 3751996afcb8f7b23dc8059456104b21dc715da9303a59d379c53f3440696a52ef4f4cd0d252e93454f72c695a7264ec1e514f11b720fd9b992c6c1a90e88b01
   languageName: node
   linkType: hard
 
-"@remix-run/router@npm:1.16.0":
-  version: 1.16.0
-  resolution: "@remix-run/router@npm:1.16.0"
-  checksum: 51f5805ec172d8ec038f8eebb5af51cac11e8dc419116c23c3765eaf1d4381390da4ab1cd04874e9126c1ec8ec7283c97efdcaf338095130439111d5218aeed0
+"@remix-run/router@npm:1.16.1":
+  version: 1.16.1
+  resolution: "@remix-run/router@npm:1.16.1"
+  checksum: 0bfbf2a04707e7f7fde5c76614e7990945a6d854d50c1f9f63cea50208ff864a8920420534ff7ddff6a0bcb584c84456d2f7613d6d6e896db46cafcc70d8fb65
   languageName: node
   linkType: hard
 
-"@remix-run/server-runtime@npm:2.9.1":
-  version: 2.9.1
-  resolution: "@remix-run/server-runtime@npm:2.9.1"
+"@remix-run/server-runtime@npm:2.9.2":
+  version: 2.9.2
+  resolution: "@remix-run/server-runtime@npm:2.9.2"
   dependencies:
-    "@remix-run/router": "npm:1.16.0"
+    "@remix-run/router": "npm:1.16.1"
     "@types/cookie": "npm:^0.6.0"
     "@web3-storage/multipart-parser": "npm:^1.0.0"
     cookie: "npm:^0.6.0"
@@ -937,7 +937,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 2072922a86e6532a435040ab2710e0685f59507f191848a34456cf6545a49bdc22949c96edd691e4d7fe150c4253ef986b53f64b31eb8db9ad7c121d9a76543b
+  checksum: 52daceb6d4e2093404ab6859b59599cc548dc8627914e6b8275ee12739c8a4cd20af65275a896a40d413eac92885763e7476b16fd1b8a6d34430ebd484fc3341
   languageName: node
   linkType: hard
 
