@@ -70,7 +70,7 @@ function createRemixRequest(request, options = {}) {
     headers: request.headers,
     signal: controller.signal,
     // eslint-disable-next-line unicorn/no-null -- Request init expects a `null` value.
-    body: isGetOrHead(request) ? request.body : null,
+    body: isGetOrHead(request) ? null : request.clone().body,
   };
 
   return new Request(url.href, init);

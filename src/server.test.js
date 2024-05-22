@@ -265,11 +265,10 @@ describe('server', () => {
     );
   });
 
-  test('body should be `null` when incoming request is not a GET or HEAD', async () => {
+  test('body should be `null` when incoming request is a GET or HEAD', async () => {
     const mockHandler = vi.fn().mockResolvedValue(new Response());
     const mockHttpRequest = new HttpRequest({
-      body: 'incoming-body',
-      method: 'OPTIONS',
+      method: 'GET',
       headers: { host: 'test.com' },
       params: undefined,
       url: 'https://test.com',
@@ -285,6 +284,32 @@ describe('server', () => {
     expect(mockHandler).toHaveBeenCalledWith(
       expect.objectContaining({
         body: null,
+      }),
+      undefined
+    );
+  });
+
+  test('body should not be null when incoming request is not a GET or HEAD', async () => {
+    const mockHandler = vi.fn().mockResolvedValue(new Response('incoming-body'));
+    const mockHttpRequest = new HttpRequest({
+      body: { string: 'incoming-body' },
+      method: 'POST',
+      headers: { host: 'test.com' },
+      params: undefined,
+      url: 'https://test.com',
+    });
+
+    createRemixRequestHandler.mockReturnValue(mockHandler);
+    const handler = createRequestHandler({
+      build: {},
+    });
+
+    const response = await handler(mockHttpRequest, {});
+    expect(response.body).toBe('incoming-body');
+
+    expect(mockHandler).toHaveBeenCalledWith(
+      expect.objectContaining({
+        body: expect.any(Object),
       }),
       undefined
     );
