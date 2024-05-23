@@ -65,6 +65,8 @@ function createRemixRequest(request, options = {}) {
   // Note: No current way to abort these for Azure, but our router expects
   // requests to contain a signal so it can detect aborted requests
   const controller = new AbortController();
+
+  /** @type {RequestInit} */
   const init = {
     method: request.method,
     headers: request.headers,
