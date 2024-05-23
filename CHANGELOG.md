@@ -1,3 +1,11 @@
+## 1.0.2 (2024-05-23)
+
+
+### Bug Fixes
+
+* **post:** update logic to reject bodies for GET/HEAD but not other request types d96cb72
+* **request:** set duplex to 'half' when body exists 560a880
+
 ## 1.0.1 (2024-01-11)
 
 
