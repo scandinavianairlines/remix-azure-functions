@@ -74,6 +74,7 @@ function createRemixRequest(request, options = {}) {
     duplex: isGetOrHead(request) ? undefined : 'half',
   };
 
+  // eslint-disable-next-line n/no-unsupported-features/node-builtins
   return new Request(url.href, init);
 }
 
