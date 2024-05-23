@@ -1,3 +1,10 @@
+## 1.0.3 (2024-05-23)
+
+
+### Bug Fixes
+
+* **types:** add type decleration to enforce specific typing 28609ef
+
 ## 1.0.2 (2024-05-23)
 
 
