@@ -1,3 +1,4 @@
+/* eslint-disable n/no-unsupported-features/node-builtins */
 import { HttpRequest } from '@azure/functions';
 import { createRequestHandler as createRemixRequestHandler, readableStreamToString } from '@remix-run/node';
 import { beforeEach, describe, expect, test, vi } from 'vitest';
