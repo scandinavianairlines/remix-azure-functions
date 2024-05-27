@@ -23,13 +23,13 @@ __metadata:
   linkType: hard
 
 "@azure/functions@npm:^4.4.0":
-  version: 4.4.0
-  resolution: "@azure/functions@npm:4.4.0"
+  version: 4.5.0
+  resolution: "@azure/functions@npm:4.5.0"
   dependencies:
     cookie: "npm:^0.6.0"
     long: "npm:^4.0.0"
     undici: "npm:^5.13.0"
-  checksum: 8f7a856d8356541b8cba0628efca62eac87eeb3c050e2473663120eb1e9feb236af911cdc481c63a11b6b8b68359d7f617633fac1570bcd33fc86f3aad4bd899
+  checksum: 12098cfe39b6ab25eac4e09a807395ac4d4c112487d9f474f58e8b6a9c792e28e832ff4024bb0c43e1e6e03c227363a85f25f25fcc7ffa6b3c99ab12461c5e94
   languageName: node
   linkType: hard
 
