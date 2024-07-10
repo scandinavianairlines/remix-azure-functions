@@ -141,13 +141,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@azure/functions@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "@azure/functions@npm:4.1.0"
+"@azure/functions@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "@azure/functions@npm:4.5.0"
   dependencies:
+    cookie: "npm:^0.6.0"
     long: "npm:^4.0.0"
     undici: "npm:^5.13.0"
-  checksum: caa611cc147f8b7cd24fbda146a396a9ff3e5fa2b989ece9da080f522841ade532ac53329e4d03c6dd949b74400f4f48a1b3035dbbc56f4206f36bbbb11b9c4b
+  checksum: 12098cfe39b6ab25eac4e09a807395ac4d4c112487d9f474f58e8b6a9c792e28e832ff4024bb0c43e1e6e03c227363a85f25f25fcc7ffa6b3c99ab12461c5e94
   languageName: node
   linkType: hard
 
@@ -223,9 +224,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@azure/static-web-apps-cli@npm:^1.1.6":
-  version: 1.1.6
-  resolution: "@azure/static-web-apps-cli@npm:1.1.6"
+"@azure/static-web-apps-cli@npm:^1.1.10":
+  version: 1.1.10
+  resolution: "@azure/static-web-apps-cli@npm:1.1.10"
   dependencies:
     "@azure/arm-appservice": "npm:^12.0.0"
     "@azure/arm-resources": "npm:^5.0.1"
@@ -262,7 +263,7 @@ __metadata:
     yaml: "npm:^2.0.1"
   bin:
     swa: dist/cli/bin.js
-  checksum: 89ed2c5897fa141d7419c640c1f65fd075d76d1cd06ed17c74f2f2b1c43ac205cdf6df46811c43ffaa9b25fe1f443c33cfc2d8df066283881869d443f96d06d8
+  checksum: d2f0c337cce5a251b47c5db5f46438dacce8e7938b64308b59a39c8d72197084028efaf60d53983ac0600098dfd5ddd03e30a373c276a0ca797b6605c18c6edc
   languageName: node
   linkType: hard
 
@@ -279,17 +280,17 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@examples/azure-staticwebapp-server@workspace:."
   dependencies:
-    "@azure/functions": "npm:^4.1.0"
-    "@azure/static-web-apps-cli": "npm:^1.1.6"
-    "@remix-run/css-bundle": "npm:^2.5.0"
-    "@remix-run/node": "npm:^2.5.0"
-    "@remix-run/react": "npm:^2.5.0"
-    "@remix-run/serve": "npm:^2.5.0"
-    "@scandinavianairlines/remix-azure-functions": "npm:^1.0.1"
-    azure-functions-core-tools: "npm:^4.0.5455"
-    isbot: "npm:^4.3.0"
-    react: "npm:^18.2.0"
-    react-dom: "npm:^18.2.0"
+    "@azure/functions": "npm:^4.5.0"
+    "@azure/static-web-apps-cli": "npm:^1.1.10"
+    "@remix-run/css-bundle": "npm:^2.10.2"
+    "@remix-run/node": "npm:^2.10.2"
+    "@remix-run/react": "npm:^2.10.2"
+    "@remix-run/serve": "npm:^2.10.2"
+    "@scandinavianairlines/remix-azure-functions": "npm:^1.0.3"
+    azure-functions-core-tools: "npm:^4.0.5907"
+    isbot: "npm:^4.4.0"
+    react: "npm:^18.3.1"
+    react-dom: "npm:^18.3.1"
   languageName: unknown
   linkType: soft
 
@@ -323,6 +324,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@isaacs/fs-minipass@npm:^4.0.0":
+  version: 4.0.1
+  resolution: "@isaacs/fs-minipass@npm:4.0.1"
+  dependencies:
+    minipass: "npm:^7.0.4"
+  checksum: 4412e9e6713c89c1e66d80bb0bb5a2a93192f10477623a27d08f228ba0316bb880affabc5bfe7f838f58a34d26c2c190da726e576cdfc18c49a72e89adabdcf5
+  languageName: node
+  linkType: hard
+
 "@npmcli/agent@npm:^2.0.0":
   version: 2.2.0
   resolution: "@npmcli/agent@npm:2.2.0"
@@ -352,57 +362,57 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/css-bundle@npm:^2.5.0":
-  version: 2.5.0
-  resolution: "@remix-run/css-bundle@npm:2.5.0"
-  checksum: 8d446223b1796946645106604c2d3458cba9e151ec5ebf03fbe8a5ca0df7d88cf85748250080f8ae3d5ca0ad9e12e20dba3ad60eb0fe73659e1ec25013be7a44
+"@remix-run/css-bundle@npm:^2.10.2":
+  version: 2.10.2
+  resolution: "@remix-run/css-bundle@npm:2.10.2"
+  checksum: a91da5a0cddf6a6a0f2cf76c78e51f157d21cfd7e87777dd54cd1907ce5ce2f519d2d86ecef69a0ff1423fe514b06a45d4f4f58a2048f05a97570a6f897eaeb0
   languageName: node
   linkType: hard
 
-"@remix-run/express@npm:2.5.0":
-  version: 2.5.0
-  resolution: "@remix-run/express@npm:2.5.0"
+"@remix-run/express@npm:2.10.2":
+  version: 2.10.2
+  resolution: "@remix-run/express@npm:2.10.2"
   dependencies:
-    "@remix-run/node": "npm:2.5.0"
+    "@remix-run/node": "npm:2.10.2"
   peerDependencies:
-    express: ^4.17.1
+    express: ^4.19.2
     typescript: ^5.1.0
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 2e7a53a95eebe342fbb9170524b2b279aefed2412acc4fb8093e5688cda69a062f9830d4243993462f457548077bebf69029fedc1fb93a90619b677ab5dd80ab
+  checksum: 9ca184d9825a6b780c59ddf356a6e60e312a787098e462867cd8dee9cff6b9a86ebe74e8a29b52ecd4147439c99490a8acd16316daf268bb04c5ae3a63a90f2a
   languageName: node
   linkType: hard
 
-"@remix-run/node@npm:2.5.0, @remix-run/node@npm:^2.5.0":
-  version: 2.5.0
-  resolution: "@remix-run/node@npm:2.5.0"
+"@remix-run/node@npm:2.10.2, @remix-run/node@npm:^2.10.2":
+  version: 2.10.2
+  resolution: "@remix-run/node@npm:2.10.2"
   dependencies:
-    "@remix-run/server-runtime": "npm:2.5.0"
+    "@remix-run/server-runtime": "npm:2.10.2"
     "@remix-run/web-fetch": "npm:^4.4.2"
-    "@remix-run/web-file": "npm:^3.1.0"
-    "@remix-run/web-stream": "npm:^1.1.0"
     "@web3-storage/multipart-parser": "npm:^1.0.0"
     cookie-signature: "npm:^1.1.0"
     source-map-support: "npm:^0.5.21"
     stream-slice: "npm:^0.1.2"
+    undici: "npm:^6.11.1"
   peerDependencies:
     typescript: ^5.1.0
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 2583cbb3a8e703d7e6ad60e65b38214dd1fb0cf4392fb4e29a9f0fe14d9aaa1ed5ac80b08518ce50f38eba8a5d930599ee59b10b1a8d70c14c238060fb21abad
+  checksum: 8a092a6d7e0bfd9a2245882cf916a2097fbb3fa20848b30f038d435d0334f238bf39afc0684be4b48afe4f18d11ac6601d8e7bc54afa8057122444b896473425
   languageName: node
   linkType: hard
 
-"@remix-run/react@npm:^2.5.0":
-  version: 2.5.0
-  resolution: "@remix-run/react@npm:2.5.0"
+"@remix-run/react@npm:^2.10.2":
+  version: 2.10.2
+  resolution: "@remix-run/react@npm:2.10.2"
   dependencies:
-    "@remix-run/router": "npm:1.14.2"
-    "@remix-run/server-runtime": "npm:2.5.0"
-    react-router: "npm:6.21.2"
-    react-router-dom: "npm:6.21.2"
+    "@remix-run/router": "npm:1.17.1"
+    "@remix-run/server-runtime": "npm:2.10.2"
+    react-router: "npm:6.24.1"
+    react-router-dom: "npm:6.24.1"
+    turbo-stream: "npm:2.2.0"
   peerDependencies:
     react: ^18.0.0
     react-dom: ^18.0.0
@@ -410,51 +420,52 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: a050d0e5092d631ce5ee95e1c55ad99a3950bfc2b5c13f1cf4fdc704f8bded5c03f9f1d1a626421ea8d9cebadcc1a16ed00a8a8a902b9bee3f8e9517ae0f930e
+  checksum: 9d3ecf6b53ff5fc4be9a65c374893f1e9e327f2249da5fd3d93d598b39154e066c7fbb4656243f923d76f1cdc5aaaf92095e91a615f37db6c8dd124de90dfcf8
   languageName: node
   linkType: hard
 
-"@remix-run/router@npm:1.14.2":
-  version: 1.14.2
-  resolution: "@remix-run/router@npm:1.14.2"
-  checksum: 422844e88b985f1e287301b302c6cf8169c9eea792f80d40464f97b25393bb2e697228ebd7a7b61444d5a51c5873c4a637aad20acde5886a5caf62e833c5ceee
+"@remix-run/router@npm:1.17.1":
+  version: 1.17.1
+  resolution: "@remix-run/router@npm:1.17.1"
+  checksum: 5efc598626cd81688ac26e0abd08204b980831ead8cd2c4b8a27e0c169ee4777fc609fa289c093b93efc3a1e335304698c6961276c2309348444ec7209836c83
   languageName: node
   linkType: hard
 
-"@remix-run/serve@npm:^2.5.0":
-  version: 2.5.0
-  resolution: "@remix-run/serve@npm:2.5.0"
+"@remix-run/serve@npm:^2.10.2":
+  version: 2.10.2
+  resolution: "@remix-run/serve@npm:2.10.2"
   dependencies:
-    "@remix-run/express": "npm:2.5.0"
-    "@remix-run/node": "npm:2.5.0"
+    "@remix-run/express": "npm:2.10.2"
+    "@remix-run/node": "npm:2.10.2"
     chokidar: "npm:^3.5.3"
     compression: "npm:^1.7.4"
-    express: "npm:^4.17.1"
+    express: "npm:^4.19.2"
     get-port: "npm:5.1.1"
     morgan: "npm:^1.10.0"
     source-map-support: "npm:^0.5.21"
   bin:
     remix-serve: dist/cli.js
-  checksum: 256c069ed42b86c29af4364a65f3fdf88dfd963f6527680ae66c57a00a2d19f73e04184b197ce18fa8ab9e4f601bf45c53e3acf0b8dd597920406f1a8ebf4cfd
+  checksum: fe099b30eb567bdbf6cf99886b8265c30d43db0bfb4862db805c565203e479b8a13ad3442eaa7bdc6ab1acafe6b0cc7765b056a9c5f204a309314286295f92a1
   languageName: node
   linkType: hard
 
-"@remix-run/server-runtime@npm:2.5.0":
-  version: 2.5.0
-  resolution: "@remix-run/server-runtime@npm:2.5.0"
+"@remix-run/server-runtime@npm:2.10.2":
+  version: 2.10.2
+  resolution: "@remix-run/server-runtime@npm:2.10.2"
   dependencies:
-    "@remix-run/router": "npm:1.14.2"
+    "@remix-run/router": "npm:1.17.1"
     "@types/cookie": "npm:^0.6.0"
     "@web3-storage/multipart-parser": "npm:^1.0.0"
     cookie: "npm:^0.6.0"
     set-cookie-parser: "npm:^2.4.8"
     source-map: "npm:^0.7.3"
+    turbo-stream: "npm:2.2.0"
   peerDependencies:
     typescript: ^5.1.0
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 52986ef09458e33de4ae9d2850c9adb3e699347d84f067b58db81fc69926874848cd3e4281a3304b44ae578a916fc35b36fdd7d923ec7afc712a4438d5577dc6
+  checksum: a9906dd479f173676c7b72b7b019c8b13a67c38e80790ea4280b4748587e26d7ffaf1423b61c98888e88c087a139e8023e191ac0e21ae5e3165d990015ddc9ed
   languageName: node
   linkType: hard
 
@@ -511,16 +522,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@scandinavianairlines/remix-azure-functions@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@scandinavianairlines/remix-azure-functions@npm:1.0.1"
+"@scandinavianairlines/remix-azure-functions@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@scandinavianairlines/remix-azure-functions@npm:1.0.3"
   peerDependencies:
     "@azure/functions": ">=4.0.0"
     "@remix-run/node": ">=2.0.0"
   peerDependenciesMeta:
     "@azure/functions":
       optional: true
-  checksum: 64ace86b0c4d89957031d82d7dee982eab6d315dbc98d453067d54bd4a3404dc56daf1e09451c3c8a6d8aa83fbfe1b864de3a06cd6273f7164ddacea87718bd3
+  checksum: 6aede3ae178981cfc75231776aae5f5b735165c58a5cbe13ded8771e9fc8670f16b534b53f3f6320edc38e5e55df5b63997154b55add2d6d6327b9f9e428b312
   languageName: node
   linkType: hard
 
@@ -884,31 +895,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:>0.28.1":
-  version: 1.6.8
-  resolution: "axios@npm:1.6.8"
+"axios@npm:>=0.28.0":
+  version: 1.7.2
+  resolution: "axios@npm:1.7.2"
   dependencies:
     follow-redirects: "npm:^1.15.6"
     form-data: "npm:^4.0.0"
     proxy-from-env: "npm:^1.1.0"
-  checksum: 3f9a79eaf1d159544fca9576261ff867cbbff64ed30017848e4210e49f3b01e97cf416390150e6fdf6633f336cd43dc1151f890bbd09c3c01ad60bb0891eee63
+  checksum: 6ae80dda9736bb4762ce717f1a26ff997d94672d3a5799ad9941c24d4fb019c1dff45be8272f08d1975d7950bac281f3ba24aff5ecd49ef5a04d872ec428782f
   languageName: node
   linkType: hard
 
-"azure-functions-core-tools@npm:^4.0.5455":
-  version: 4.0.5455
-  resolution: "azure-functions-core-tools@npm:4.0.5455"
+"azure-functions-core-tools@npm:^4.0.5907":
+  version: 4.0.5907
+  resolution: "azure-functions-core-tools@npm:4.0.5907"
   dependencies:
     chalk: "npm:3.0.0"
     extract-zip: "npm:^2.0.1"
     https-proxy-agent: "npm:5.0.0"
     progress: "npm:2.0.3"
-    rimraf: "npm:3.0.2"
+    rimraf: "npm:4.4.1"
   bin:
     azfun: lib/main.js
     azurefunctions: lib/main.js
     func: lib/main.js
-  checksum: ddcb8033a1cd6f2abec1da00690948bb02f98ac5936293e915d541737b15120a151ad2684da62e85987a6508f56b58cba216417dd89bc5ef83925f9c1d73739e
+  checksum: afe0aef302870e0ce2ba570b6e9e7c387162bba5a8d4c71b5ad89aa221f3a3565be5ab42ddb54469351d83d40fbe73a79d386ae5e4122a450e6b99a90b9a5055
   conditions: (os=win32 | os=darwin | os=linux)
   languageName: node
   linkType: hard
@@ -1009,12 +1020,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"braces@npm:~3.0.2":
-  version: 3.0.2
-  resolution: "braces@npm:3.0.2"
+"braces@npm:>=3.0.3":
+  version: 3.0.3
+  resolution: "braces@npm:3.0.3"
   dependencies:
-    fill-range: "npm:^7.0.1"
-  checksum: 966b1fb48d193b9d155f810e5efd1790962f2c4e0829f8440b8ad236ba009222c501f70185ef732fef17a4c490bb33a03b90dab0631feafbdf447da91e8165b1
+    fill-range: "npm:^7.1.1"
+  checksum: fad11a0d4697a27162840b02b1fad249c1683cbc510cd5bf1a471f2f8085c046d41094308c577a50a03a579dd99d5a6b3724c4b5e8b14df2c4443844cfcda2c6
   languageName: node
   linkType: hard
 
@@ -1176,10 +1187,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chownr@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "chownr@npm:2.0.0"
-  checksum: c57cf9dd0791e2f18a5ee9c1a299ae6e801ff58fee96dc8bfd0dcb4738a6ce58dd252a3605b1c93c6418fe4f9d5093b28ffbf4d66648cb2a9c67eaef9679be2f
+"chownr@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "chownr@npm:3.0.0"
+  checksum: b63cb1f73d171d140a2ed8154ee6566c8ab775d3196b0e03a2a94b5f6a0ce7777ee5685ca56849403c8d17bd457a6540672f9a60696a6137c7a409097495b82c
   languageName: node
   linkType: hard
 
@@ -1770,7 +1781,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"express@npm:^4.17.1":
+"express@npm:^4.19.2":
   version: 4.19.2
   resolution: "express@npm:4.19.2"
   dependencies:
@@ -1842,12 +1853,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fill-range@npm:^7.0.1":
-  version: 7.0.1
-  resolution: "fill-range@npm:7.0.1"
+"fill-range@npm:^7.1.1":
+  version: 7.1.1
+  resolution: "fill-range@npm:7.1.1"
   dependencies:
     to-regex-range: "npm:^5.0.1"
-  checksum: e260f7592fd196b4421504d3597cc76f4a1ca7a9488260d533b611fc3cefd61e9a9be1417cb82d3b01ad9f9c0ff2dbf258e1026d2445e26b0cf5148ff4250429
+  checksum: a7095cb39e5bc32fada2aa7c7249d3f6b01bd1ce461a61b0adabacccabd9198500c6fb1f68a7c851a657e273fce2233ba869638897f3d7ed2e87a2d89b4436ea
   languageName: node
   linkType: hard
 
@@ -1931,15 +1942,6 @@ __metadata:
   version: 1.0.0
   resolution: "fs-constants@npm:1.0.0"
   checksum: 18f5b718371816155849475ac36c7d0b24d39a11d91348cfcb308b4494824413e03572c403c86d3a260e049465518c4f0d5bd00f0371cdfcad6d4f30a85b350d
-  languageName: node
-  linkType: hard
-
-"fs-minipass@npm:^2.0.0":
-  version: 2.1.0
-  resolution: "fs-minipass@npm:2.1.0"
-  dependencies:
-    minipass: "npm:^3.0.0"
-  checksum: 03191781e94bc9a54bd376d3146f90fe8e082627c502185dbf7b9b3032f66b0b142c1115f3b2cc5936575fc1b44845ce903dd4c21bec2a8d69f3bd56f9cee9ec
   languageName: node
   linkType: hard
 
@@ -2072,6 +2074,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"glob@npm:^10.3.7":
+  version: 10.4.5
+  resolution: "glob@npm:10.4.5"
+  dependencies:
+    foreground-child: "npm:^3.1.0"
+    jackspeak: "npm:^3.1.2"
+    minimatch: "npm:^9.0.4"
+    minipass: "npm:^7.1.2"
+    package-json-from-dist: "npm:^1.0.0"
+    path-scurry: "npm:^1.11.1"
+  bin:
+    glob: dist/esm/bin.mjs
+  checksum: 698dfe11828b7efd0514cd11e573eaed26b2dff611f0400907281ce3eab0c1e56143ef9b35adc7c77ecc71fba74717b510c7c223d34ca8a98ec81777b293d4ac
+  languageName: node
+  linkType: hard
+
 "glob@npm:^7.1.2, glob@npm:^7.1.3":
   version: 7.2.3
   resolution: "glob@npm:7.2.3"
@@ -2083,6 +2101,18 @@ __metadata:
     once: "npm:^1.3.0"
     path-is-absolute: "npm:^1.0.0"
   checksum: 59452a9202c81d4508a43b8af7082ca5c76452b9fcc4a9ab17655822e6ce9b21d4f8fbadabe4fe3faef448294cec249af305e2cd824b7e9aaf689240e5e96a7b
+  languageName: node
+  linkType: hard
+
+"glob@npm:^9.2.0":
+  version: 9.3.5
+  resolution: "glob@npm:9.3.5"
+  dependencies:
+    fs.realpath: "npm:^1.0.0"
+    minimatch: "npm:^8.0.2"
+    minipass: "npm:^4.2.4"
+    path-scurry: "npm:^1.6.1"
+  checksum: e5fa8a58adf53525bca42d82a1fad9e6800032b7e4d372209b80cfdca524dd9a7dbe7d01a92d7ed20d89c572457f12c250092bc8817cb4f1c63efefdf9b658c0
   languageName: node
   linkType: hard
 
@@ -2602,7 +2632,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"isbot@npm:^4.3.0":
+"isbot@npm:^4.4.0":
   version: 4.4.0
   resolution: "isbot@npm:4.4.0"
   checksum: 8ebf10efc7c7e8ba07fc105cbd24c0d9539e41b4c8e4452909f1cd44752ad0c9b2381cb4e712c977a78e82a79827eb1b8e800f211046ee96eefedb29db2acb70
@@ -2633,6 +2663,19 @@ __metadata:
     "@pkgjs/parseargs":
       optional: true
   checksum: 6e6490d676af8c94a7b5b29b8fd5629f21346911ebe2e32931c2a54210134408171c24cee1a109df2ec19894ad04a429402a8438cbf5cc2794585d35428ace76
+  languageName: node
+  linkType: hard
+
+"jackspeak@npm:^3.1.2":
+  version: 3.4.2
+  resolution: "jackspeak@npm:3.4.2"
+  dependencies:
+    "@isaacs/cliui": "npm:^8.0.2"
+    "@pkgjs/parseargs": "npm:^0.11.0"
+  dependenciesMeta:
+    "@pkgjs/parseargs":
+      optional: true
+  checksum: 485b77ffef380d1a1367a6453f3c6e61ca02728012be99bb397e673479020e87b1b0307d8f2a9288e48017eea9b8c95586a5c621b137e60c856e87365b9e1a8f
   languageName: node
   linkType: hard
 
@@ -2871,6 +2914,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lru-cache@npm:^10.2.0":
+  version: 10.4.3
+  resolution: "lru-cache@npm:10.4.3"
+  checksum: e6e90267360476720fa8e83cc168aa2bf0311f3f2eea20a6ba78b90a885ae72071d9db132f40fda4129c803e7dcec3a6b6a6fbb44ca90b081630b810b5d6a41a
+  languageName: node
+  linkType: hard
+
 "lru-cache@npm:^6.0.0":
   version: 6.0.0
   resolution: "lru-cache@npm:6.0.0"
@@ -3002,12 +3052,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"minimatch@npm:^8.0.2":
+  version: 8.0.4
+  resolution: "minimatch@npm:8.0.4"
+  dependencies:
+    brace-expansion: "npm:^2.0.1"
+  checksum: aef05598ee565e1013bc8a10f53410ac681561f901c1a084b8ecfd016c9ed919f58f4bbd5b63e05643189dfb26e8106a84f0e1ff12e4a263aa37e1cae7ce9828
+  languageName: node
+  linkType: hard
+
 "minimatch@npm:^9.0.1":
   version: 9.0.3
   resolution: "minimatch@npm:9.0.3"
   dependencies:
     brace-expansion: "npm:^2.0.1"
   checksum: c81b47d28153e77521877649f4bab48348d10938df9e8147a58111fe00ef89559a2938de9f6632910c4f7bf7bb5cd81191a546167e58d357f0cfb1e18cecc1c5
+  languageName: node
+  linkType: hard
+
+"minimatch@npm:^9.0.4":
+  version: 9.0.5
+  resolution: "minimatch@npm:9.0.5"
+  dependencies:
+    brace-expansion: "npm:^2.0.1"
+  checksum: dd6a8927b063aca6d910b119e1f2df6d2ce7d36eab91de83167dd136bb85e1ebff97b0d3de1cb08bd1f7e018ca170b4962479fefab5b2a69e2ae12cb2edc8348
   languageName: node
   linkType: hard
 
@@ -3078,10 +3146,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minipass@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "minipass@npm:5.0.0"
-  checksum: 61682162d29f45d3152b78b08bab7fb32ca10899bc5991ffe98afc18c9e9543bd1e3be94f8b8373ba6262497db63607079dc242ea62e43e7b2270837b7347c93
+"minipass@npm:^4.2.4":
+  version: 4.2.8
+  resolution: "minipass@npm:4.2.8"
+  checksum: e148eb6dcb85c980234cad889139ef8ddf9d5bdac534f4f0268446c8792dd4c74f4502479be48de3c1cce2f6450f6da4d0d4a86405a8a12be04c1c36b339569a
   languageName: node
   linkType: hard
 
@@ -3092,13 +3160,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minizlib@npm:^2.1.1, minizlib@npm:^2.1.2":
+"minipass@npm:^7.0.4, minipass@npm:^7.1.2":
+  version: 7.1.2
+  resolution: "minipass@npm:7.1.2"
+  checksum: c25f0ee8196d8e6036661104bacd743785b2599a21de5c516b32b3fa2b83113ac89a2358465bc04956baab37ffb956ae43be679b2262bf7be15fce467ccd7950
+  languageName: node
+  linkType: hard
+
+"minizlib@npm:^2.1.2":
   version: 2.1.2
   resolution: "minizlib@npm:2.1.2"
   dependencies:
     minipass: "npm:^3.0.0"
     yallist: "npm:^4.0.0"
   checksum: ae0f45436fb51344dcb87938446a32fbebb540d0e191d63b35e1c773d47512e17307bf54aa88326cc6d176594d00e4423563a091f7266c2f9a6872cdc1e234d1
+  languageName: node
+  linkType: hard
+
+"minizlib@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "minizlib@npm:3.0.1"
+  dependencies:
+    minipass: "npm:^7.0.4"
+    rimraf: "npm:^5.0.5"
+  checksum: 622cb85f51e5c206a080a62d20db0d7b4066f308cb6ce82a9644da112367c3416ae7062017e631eb7ac8588191cfa4a9a279b8651c399265202b298e98c4acef
   languageName: node
   linkType: hard
 
@@ -3120,12 +3205,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mkdirp@npm:^1.0.3":
-  version: 1.0.4
-  resolution: "mkdirp@npm:1.0.4"
+"mkdirp@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "mkdirp@npm:3.0.1"
   bin:
-    mkdirp: bin/cmd.js
-  checksum: d71b8dcd4b5af2fe13ecf3bd24070263489404fe216488c5ba7e38ece1f54daf219e72a833a3a2dc404331e870e9f44963a33399589490956bff003a3404d3b2
+    mkdirp: dist/cjs/src/bin.js
+  checksum: 16fd79c28645759505914561e249b9a1f5fe3362279ad95487a4501e4467abeb714fd35b95307326b8fd03f3c7719065ef11a6f97b7285d7888306d1bd2232ba
   languageName: node
   linkType: hard
 
@@ -3403,6 +3488,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"package-json-from-dist@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "package-json-from-dist@npm:1.0.0"
+  checksum: ac706ec856a5a03f5261e4e48fa974f24feb044d51f84f8332e2af0af04fbdbdd5bbbfb9cbbe354190409bc8307c83a9e38c6672c3c8855f709afb0006a009ea
+  languageName: node
+  linkType: hard
+
 "package-json@npm:^6.3.0":
   version: 6.5.0
   resolution: "package-json@npm:6.5.0"
@@ -3453,6 +3545,16 @@ __metadata:
     lru-cache: "npm:^9.1.1 || ^10.0.0"
     minipass: "npm:^5.0.0 || ^6.0.2 || ^7.0.0"
   checksum: eebfb8304fef1d4f7e1486df987e4fd77413de4fce16508dea69fcf8eb318c09a6b15a7a2f4c22877cec1cb7ecbd3071d18ca9de79eeece0df874a00f1f0bdc8
+  languageName: node
+  linkType: hard
+
+"path-scurry@npm:^1.11.1, path-scurry@npm:^1.6.1":
+  version: 1.11.1
+  resolution: "path-scurry@npm:1.11.1"
+  dependencies:
+    lru-cache: "npm:^10.2.0"
+    minipass: "npm:^5.0.0 || ^6.0.2 || ^7.0.0"
+  checksum: 5e8845c159261adda6f09814d7725683257fcc85a18f329880ab4d7cc1d12830967eae5d5894e453f341710d5484b8fdbbd4d75181b4d6e1eb2f4dc7aeadc434
   languageName: node
   linkType: hard
 
@@ -3637,48 +3739,48 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^18.2.0":
-  version: 18.2.0
-  resolution: "react-dom@npm:18.2.0"
+"react-dom@npm:^18.3.1":
+  version: 18.3.1
+  resolution: "react-dom@npm:18.3.1"
   dependencies:
     loose-envify: "npm:^1.1.0"
-    scheduler: "npm:^0.23.0"
+    scheduler: "npm:^0.23.2"
   peerDependencies:
-    react: ^18.2.0
-  checksum: ca5e7762ec8c17a472a3605b6f111895c9f87ac7d43a610ab7024f68cd833d08eda0625ce02ec7178cc1f3c957cf0b9273cdc17aa2cd02da87544331c43b1d21
+    react: ^18.3.1
+  checksum: 3f4b73a3aa083091173b29812b10394dd06f4ac06aff410b74702cfb3aa29d7b0ced208aab92d5272919b612e5cda21aeb1d54191848cf6e46e9e354f3541f81
   languageName: node
   linkType: hard
 
-"react-router-dom@npm:6.21.2":
-  version: 6.21.2
-  resolution: "react-router-dom@npm:6.21.2"
+"react-router-dom@npm:6.24.1":
+  version: 6.24.1
+  resolution: "react-router-dom@npm:6.24.1"
   dependencies:
-    "@remix-run/router": "npm:1.14.2"
-    react-router: "npm:6.21.2"
+    "@remix-run/router": "npm:1.17.1"
+    react-router: "npm:6.24.1"
   peerDependencies:
     react: ">=16.8"
     react-dom: ">=16.8"
-  checksum: 24d1470e68f11369776c623b8873c8cf0af476d102317cb3aa6b13b48c86908f10a6e51209ce24dccf40e429538d4e23fda796c190f2ff98f894cb476d51f44d
+  checksum: 98eeeec3d36695b3d6d8000d8373ba3cefa9afc49ee44f646f3b721e8b47a80f5ce3737ad1f752cccf19caf01e370918750a4bc86a06a99e491731b454d5ec55
   languageName: node
   linkType: hard
 
-"react-router@npm:6.21.2":
-  version: 6.21.2
-  resolution: "react-router@npm:6.21.2"
+"react-router@npm:6.24.1":
+  version: 6.24.1
+  resolution: "react-router@npm:6.24.1"
   dependencies:
-    "@remix-run/router": "npm:1.14.2"
+    "@remix-run/router": "npm:1.17.1"
   peerDependencies:
     react: ">=16.8"
-  checksum: 08701bfe9e7b860442dd0f3c6e36d3ea6106d86db5ec9da930fd56d5782a13b82612826de7dd31bb38832f3fa76437d7a0ca36e63a76256f62d5b738f529a48c
+  checksum: 18ac968171dee286a2f067dc8568faf73c759f833e88e09f1b34ff6e9376d1fd5eade8697a86be83093225956b256b398d935ce2f681c1bf711fb3c058c19839
   languageName: node
   linkType: hard
 
-"react@npm:^18.2.0":
-  version: 18.2.0
-  resolution: "react@npm:18.2.0"
+"react@npm:^18.3.1":
+  version: 18.3.1
+  resolution: "react@npm:18.3.1"
   dependencies:
     loose-envify: "npm:^1.1.0"
-  checksum: b9214a9bd79e99d08de55f8bef2b7fc8c39630be97c4e29d7be173d14a9a10670b5325e94485f74cd8bff4966ef3c78ee53c79a7b0b9b70cba20aa8973acc694
+  checksum: 261137d3f3993eaa2368a83110466fc0e558bc2c7f7ae7ca52d94f03aac945f45146bd85e5f481044db1758a1dbb57879e2fcdd33924e2dde1bdc550ce73f7bf
   languageName: node
   linkType: hard
 
@@ -3781,14 +3883,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rimraf@npm:3.0.2, rimraf@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "rimraf@npm:3.0.2"
+"rimraf@npm:4.4.1":
+  version: 4.4.1
+  resolution: "rimraf@npm:4.4.1"
   dependencies:
-    glob: "npm:^7.1.3"
+    glob: "npm:^9.2.0"
   bin:
-    rimraf: bin.js
-  checksum: 063ffaccaaaca2cfd0ef3beafb12d6a03dd7ff1260d752d62a6077b5dfff6ae81bea571f655bb6b589d366930ec1bdd285d40d560c0dae9b12f125e54eb743d5
+    rimraf: dist/cjs/src/bin.js
+  checksum: 218ef9122145ccce9d0a71124d36a3894537de46600b37fae7dba26ccff973251eaa98aa63c2c5855a05fa04bca7cbbd7a92d4b29f2875d2203e72530ecf6ede
   languageName: node
   linkType: hard
 
@@ -3800,6 +3902,28 @@ __metadata:
   bin:
     rimraf: ./bin.js
   checksum: 4586c296c736483e297da7cffd19475e4a3e41d07b1ae124aad5d687c79e4ffa716bdac8732ed1db942caf65271cee9dd39f8b639611de161a2753e2112ffe1d
+  languageName: node
+  linkType: hard
+
+"rimraf@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "rimraf@npm:3.0.2"
+  dependencies:
+    glob: "npm:^7.1.3"
+  bin:
+    rimraf: bin.js
+  checksum: 063ffaccaaaca2cfd0ef3beafb12d6a03dd7ff1260d752d62a6077b5dfff6ae81bea571f655bb6b589d366930ec1bdd285d40d560c0dae9b12f125e54eb743d5
+  languageName: node
+  linkType: hard
+
+"rimraf@npm:^5.0.5":
+  version: 5.0.9
+  resolution: "rimraf@npm:5.0.9"
+  dependencies:
+    glob: "npm:^10.3.7"
+  bin:
+    rimraf: dist/esm/bin.mjs
+  checksum: 443669809ca3d402ca7565fd9f5b994b5669d8f8b33a23e3a00a66c3a2e4c529d8a5a47c9e7c42f2c7a0c70d21ff8bb1c86493b12027139a3de47fc33fe60084
   languageName: node
   linkType: hard
 
@@ -3833,12 +3957,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"scheduler@npm:^0.23.0":
-  version: 0.23.0
-  resolution: "scheduler@npm:0.23.0"
+"scheduler@npm:^0.23.2":
+  version: 0.23.2
+  resolution: "scheduler@npm:0.23.2"
   dependencies:
     loose-envify: "npm:^1.1.0"
-  checksum: 0c4557aa37bafca44ff21dc0ea7c92e2dbcb298bc62eae92b29a39b029134f02fb23917d6ebc8b1fa536b4184934314c20d8864d156a9f6357f3398aaf7bfda8
+  checksum: e8d68b89d18d5b028223edf090092846868a765a591944760942b77ea1f69b17235f7e956696efbb62c8130ab90af7e0949bfb8eba7896335507317236966bc9
   languageName: node
   linkType: hard
 
@@ -4215,17 +4339,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tar@npm:^6.1.11, tar@npm:^6.1.2":
-  version: 6.2.1
-  resolution: "tar@npm:6.2.1"
+"tar@npm:>=6.2.1":
+  version: 7.4.0
+  resolution: "tar@npm:7.4.0"
   dependencies:
-    chownr: "npm:^2.0.0"
-    fs-minipass: "npm:^2.0.0"
-    minipass: "npm:^5.0.0"
-    minizlib: "npm:^2.1.1"
-    mkdirp: "npm:^1.0.3"
-    yallist: "npm:^4.0.0"
-  checksum: bfbfbb2861888077fc1130b84029cdc2721efb93d1d1fb80f22a7ac3a98ec6f8972f29e564103bbebf5e97be67ebc356d37fa48dbc4960600a1eb7230fbd1ea0
+    "@isaacs/fs-minipass": "npm:^4.0.0"
+    chownr: "npm:^3.0.0"
+    minipass: "npm:^7.1.2"
+    minizlib: "npm:^3.0.1"
+    mkdirp: "npm:^3.0.1"
+    yallist: "npm:^5.0.0"
+  checksum: fd0e366c0da823ac66cd0d2f52ff2b7963945a4252db88b5887053b6ab54a489380dfad64b2b26ae4a08bb2f5d66de04432d45e039a37bc0d442546ef29c6ee6
   languageName: node
   linkType: hard
 
@@ -4290,6 +4414,13 @@ __metadata:
   dependencies:
     safe-buffer: "npm:^5.0.1"
   checksum: 7f0d9ed5c22404072b2ae8edc45c071772affd2ed14a74f03b4e71b4dd1a14c3714d85aed64abcaaee5fec2efc79002ba81155c708f4df65821b444abb0cfade
+  languageName: node
+  linkType: hard
+
+"turbo-stream@npm:2.2.0":
+  version: 2.2.0
+  resolution: "turbo-stream@npm:2.2.0"
+  checksum: 1a61be95585d6c901c7f626497765e28c38332f6562f4206e8a295dca87297d044f2413f369764365a6cbb13aae3c21fee2aace4525ff32c1e787e418916914e
   languageName: node
   linkType: hard
 
@@ -4612,6 +4743,13 @@ __metadata:
   version: 4.0.0
   resolution: "yallist@npm:4.0.0"
   checksum: 4cb02b42b8a93b5cf50caf5d8e9beb409400a8a4d85e83bb0685c1457e9ac0b7a00819e9f5991ac25ffabb56a78e2f017c1acc010b3a1babfe6de690ba531abd
+  languageName: node
+  linkType: hard
+
+"yallist@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "yallist@npm:5.0.0"
+  checksum: 1884d272d485845ad04759a255c71775db0fac56308764b4c77ea56a20d56679fad340213054c8c9c9c26fcfd4c4b2a90df993b7e0aaf3cdb73c618d1d1a802a
   languageName: node
   linkType: hard
 
