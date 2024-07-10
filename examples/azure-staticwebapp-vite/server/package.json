@@ -14,21 +14,26 @@
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint ."
   },
   "dependencies": {
-    "@azure/functions": "^4.4.0",
-    "@remix-run/node": "^2.8.1",
-    "@remix-run/react": "^2.8.1",
-    "@scandinavianairlines/remix-azure-functions": "^1.0.1",
-    "isbot": "^5.1.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@azure/functions": "^4.5.0",
+    "@remix-run/node": "^2.10.2",
+    "@remix-run/react": "^2.10.2",
+    "@scandinavianairlines/remix-azure-functions": "^1.0.3",
+    "isbot": "^5.1.12",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@azure/static-web-apps-cli": "^1.1.7",
-    "azure-functions-core-tools": "^4.0.5611",
-    "vite": "^5.2.8"
+    "@azure/static-web-apps-cli": "^1.1.10",
+    "azure-functions-core-tools": "^4.0.5907",
+    "vite": "^5.3.3"
   },
   "resolutions": {
-    "undici": ">=5.28.4"
+    "axios": ">=0.28.0",
+    "braces": ">=3.0.3",
+    "got": ">12.1.0",
+    "tar": ">=6.2.1",
+    "undici": ">=5.28.4",
+    "ws": ">= 7.5.10"
   },
   "engines": {
     "node": ">=18.0.0"
