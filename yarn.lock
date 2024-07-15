@@ -1371,8 +1371,8 @@ __metadata:
   linkType: hard
 
 "@vitest/coverage-v8@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@vitest/coverage-v8@npm:2.0.1"
+  version: 2.0.2
+  resolution: "@vitest/coverage-v8@npm:2.0.2"
   dependencies:
     "@ampproject/remapping": "npm:^2.3.0"
     "@bcoe/v8-coverage": "npm:^0.2.3"
@@ -1383,13 +1383,13 @@ __metadata:
     istanbul-reports: "npm:^3.1.7"
     magic-string: "npm:^0.30.10"
     magicast: "npm:^0.3.4"
-    picocolors: "npm:^1.0.1"
     std-env: "npm:^3.7.0"
     strip-literal: "npm:^2.1.0"
     test-exclude: "npm:^7.0.1"
+    tinyrainbow: "npm:^1.2.0"
   peerDependencies:
-    vitest: 2.0.1
-  checksum: f62e7acdb31037a37da2a44b71d9ca725dd003c8879bc5c0d37f1d41afdaa42af843034229e31f9fd774de2e47c8548d3a18c33ff58b6732be5dfe664f0ec3a0
+    vitest: 2.0.2
+  checksum: 742add2db7c427ba1b3483c7b7eb13d86f38c33b1484144a6a62479630c6e688d34b6a3c3f56e25205c171e5e1e3379090707d0ec322948cfce836e97d5f7ad7
   languageName: node
   linkType: hard
 
@@ -6806,6 +6806,13 @@ __metadata:
   version: 1.0.0
   resolution: "tinypool@npm:1.0.0"
   checksum: 4041a9ae62200626dceedbf4e58589d067a203eadcb88588d5681369b9a3c68987de14ce220b32a7e4ebfabaaf51ab9fa69408a7758827b7873f8204cdc79aa1
+  languageName: node
+  linkType: hard
+
+"tinyrainbow@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "tinyrainbow@npm:1.2.0"
+  checksum: 2924444db6804355e5ba2b6e586c7f77329d93abdd7257a069a0f4530dff9f16de484e80479094e3f39273462541b003a65ee3a6afc2d12555aa745132deba5d
   languageName: node
   linkType: hard
 
