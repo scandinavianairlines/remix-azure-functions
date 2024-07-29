@@ -772,10 +772,170 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@inquirer/figures@npm:^1.0.3":
+"@inquirer/checkbox@npm:^2.4.3":
+  version: 2.4.3
+  resolution: "@inquirer/checkbox@npm:2.4.3"
+  dependencies:
+    "@inquirer/core": "npm:^9.0.6"
+    "@inquirer/figures": "npm:^1.0.5"
+    "@inquirer/type": "npm:^1.5.1"
+    ansi-escapes: "npm:^4.3.2"
+    yoctocolors-cjs: "npm:^2.1.2"
+  checksum: 42bb669f40b7b9de96339cd5bd443fbf93870a8a7941a3f37ad1632c486f9f9b1ac70f33cc89f4a2fc102ce9fb52e18c287eca2210c6289f52a89ab930c77964
+  languageName: node
+  linkType: hard
+
+"@inquirer/confirm@npm:^3.1.18":
+  version: 3.1.18
+  resolution: "@inquirer/confirm@npm:3.1.18"
+  dependencies:
+    "@inquirer/core": "npm:^9.0.6"
+    "@inquirer/type": "npm:^1.5.1"
+  checksum: 39efff774834fa4fb12a91c7865916a02d6346d8ad0ca0a8cd7e47ff9fac9ca08e7f8172ef65393a596ad4d9be2f9a03f9a1a18ceace373be80de719138dbddd
+  languageName: node
+  linkType: hard
+
+"@inquirer/core@npm:^9.0.6":
+  version: 9.0.6
+  resolution: "@inquirer/core@npm:9.0.6"
+  dependencies:
+    "@inquirer/figures": "npm:^1.0.5"
+    "@inquirer/type": "npm:^1.5.1"
+    "@types/mute-stream": "npm:^0.0.4"
+    "@types/node": "npm:^20.14.13"
+    "@types/wrap-ansi": "npm:^3.0.0"
+    ansi-escapes: "npm:^4.3.2"
+    cli-spinners: "npm:^2.9.2"
+    cli-width: "npm:^4.1.0"
+    mute-stream: "npm:^1.0.0"
+    signal-exit: "npm:^4.1.0"
+    strip-ansi: "npm:^6.0.1"
+    wrap-ansi: "npm:^6.2.0"
+    yoctocolors-cjs: "npm:^2.1.2"
+  checksum: 0fc2113a508605a9ede22a45ad43f796e3d65c9717e8c527aafb84a631c2c9bbe3d7e13591615466ef6a33eb7e0429c2cce6a3be7378319bb4e2d3ec5c3f8a7f
+  languageName: node
+  linkType: hard
+
+"@inquirer/editor@npm:^2.1.18":
+  version: 2.1.18
+  resolution: "@inquirer/editor@npm:2.1.18"
+  dependencies:
+    "@inquirer/core": "npm:^9.0.6"
+    "@inquirer/type": "npm:^1.5.1"
+    external-editor: "npm:^3.1.0"
+  checksum: beb8650a892ea931b59ffe6fc10bba57ca6476ef68b1b68b4257aec9662dd2f72ceaddd0611df1178a13f5dc1fff36e9a6d300d20db095986540fd147618d029
+  languageName: node
+  linkType: hard
+
+"@inquirer/expand@npm:^2.1.18":
+  version: 2.1.18
+  resolution: "@inquirer/expand@npm:2.1.18"
+  dependencies:
+    "@inquirer/core": "npm:^9.0.6"
+    "@inquirer/type": "npm:^1.5.1"
+    yoctocolors-cjs: "npm:^2.1.2"
+  checksum: 262f078dc8d714a8077e9de82be7147fa60c2eea3f94113d6a4d8bcef3715940f4cd28f895d452b9d8c8a64a637d9fe047e55c9cd5c248e8b7e9f799cdf99a20
+  languageName: node
+  linkType: hard
+
+"@inquirer/figures@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "@inquirer/figures@npm:1.0.5"
+  checksum: 60a51b2cdef03c89be25071c23d8c4ae427c56d8ac1b00bf054ca7be446674adc4edd66c15465fe6a81ff0726b024bf37f8a2903a8387ef968d33058da3e7a15
+  languageName: node
+  linkType: hard
+
+"@inquirer/input@npm:^2.2.5":
+  version: 2.2.5
+  resolution: "@inquirer/input@npm:2.2.5"
+  dependencies:
+    "@inquirer/core": "npm:^9.0.6"
+    "@inquirer/type": "npm:^1.5.1"
+  checksum: 605b7ceb43479d283e12a69c65129c29ee4025a8c1c0f1245ae0fa521abc5a56fbdffeb2ecad0324fbccb9e052aaac4b0d27e15798a77d817df75079409d9d23
+  languageName: node
+  linkType: hard
+
+"@inquirer/number@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "@inquirer/number@npm:1.0.6"
+  dependencies:
+    "@inquirer/core": "npm:^9.0.6"
+    "@inquirer/type": "npm:^1.5.1"
+  checksum: 7bd2f4d622d4b3339ae699d2b08c36441862121bd8209443e7273759fabe18a6996108020bd687011de87e7eedcc84bf773b6f3d903ef057266c0078fb0ec661
+  languageName: node
+  linkType: hard
+
+"@inquirer/password@npm:^2.1.18":
+  version: 2.1.18
+  resolution: "@inquirer/password@npm:2.1.18"
+  dependencies:
+    "@inquirer/core": "npm:^9.0.6"
+    "@inquirer/type": "npm:^1.5.1"
+    ansi-escapes: "npm:^4.3.2"
+  checksum: cdc050f20af6d3ae81040536a83ef8dec94bd2b16c9847f5eec9d33da17e30905b66396d3c42cf9bf1a5b0af8bd9014a68db88c5ed985aba9cac5d6c4b8d329b
+  languageName: node
+  linkType: hard
+
+"@inquirer/prompts@npm:^5.3.4":
+  version: 5.3.4
+  resolution: "@inquirer/prompts@npm:5.3.4"
+  dependencies:
+    "@inquirer/checkbox": "npm:^2.4.3"
+    "@inquirer/confirm": "npm:^3.1.18"
+    "@inquirer/editor": "npm:^2.1.18"
+    "@inquirer/expand": "npm:^2.1.18"
+    "@inquirer/input": "npm:^2.2.5"
+    "@inquirer/number": "npm:^1.0.6"
+    "@inquirer/password": "npm:^2.1.18"
+    "@inquirer/rawlist": "npm:^2.2.0"
+    "@inquirer/search": "npm:^1.0.3"
+    "@inquirer/select": "npm:^2.4.3"
+  checksum: 2b8f7d7df18b1633b5f873daed8ac5561a112d6ec76503acf8864cfaa681cda36c1975b26356b12748f32ef26b98d42f990e7015390d3d1e75549b49cda25595
+  languageName: node
+  linkType: hard
+
+"@inquirer/rawlist@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@inquirer/rawlist@npm:2.2.0"
+  dependencies:
+    "@inquirer/core": "npm:^9.0.6"
+    "@inquirer/type": "npm:^1.5.1"
+    yoctocolors-cjs: "npm:^2.1.2"
+  checksum: 884da04568ef9b42d68716d0915560204b1ec61084ee069de0a78354ee3ac736c59b97ee715d12abeee28cb95e257af8679bd8c213b6a01d41c3a2508eaef197
+  languageName: node
+  linkType: hard
+
+"@inquirer/search@npm:^1.0.3":
   version: 1.0.3
-  resolution: "@inquirer/figures@npm:1.0.3"
-  checksum: fa5c46527580c64ba151e1399f91772670f5f59e47045a3d2366188ed4cab1b63b7fb2a6d40d340f622cb174ca6dd3d5e22b962811c00548f9a9b4024b105dce
+  resolution: "@inquirer/search@npm:1.0.3"
+  dependencies:
+    "@inquirer/core": "npm:^9.0.6"
+    "@inquirer/figures": "npm:^1.0.5"
+    "@inquirer/type": "npm:^1.5.1"
+    yoctocolors-cjs: "npm:^2.1.2"
+  checksum: ade0c1be8b8e1433162ebcefc842ac0bdbc0a0be4492aed868676635649b3565bd3cf1219a04164480b7430d78b901f5747389895d563d68b4084bb8c32c9cae
+  languageName: node
+  linkType: hard
+
+"@inquirer/select@npm:^2.4.3":
+  version: 2.4.3
+  resolution: "@inquirer/select@npm:2.4.3"
+  dependencies:
+    "@inquirer/core": "npm:^9.0.6"
+    "@inquirer/figures": "npm:^1.0.5"
+    "@inquirer/type": "npm:^1.5.1"
+    ansi-escapes: "npm:^4.3.2"
+    yoctocolors-cjs: "npm:^2.1.2"
+  checksum: 0340a8a09c639c449fee60a1f69f880b2faf3e7eb4f6f7de3eb26eb84ce46a4275b34d68c5d8755dbc02158ac41c70e7f10afa752665db4b8adf5ea897564748
+  languageName: node
+  linkType: hard
+
+"@inquirer/type@npm:^1.5.1":
+  version: 1.5.1
+  resolution: "@inquirer/type@npm:1.5.1"
+  dependencies:
+    mute-stream: "npm:^1.0.0"
+  checksum: 991e029074143975a2730468edb96d45a8a56fd292e2d88584fd75fe567b15989bb8171469bb8fd14b4d84c5f0025d2d6dc520045d4b19541498ad6b52c2e36a
   languageName: node
   linkType: hard
 
@@ -1183,7 +1343,7 @@ __metadata:
     eslint-plugin-unicorn: "npm:^54.0.0"
     eslint-plugin-vitest: "npm:^0.5.4"
     husky: "npm:^9.0.11"
-    inquirer: "npm:^9.3.5"
+    inquirer: "npm:^10.1.4"
     lint-staged: "npm:^15.2.7"
     pinst: "npm:^3.0.0"
     prettier: "npm:^3.3.2"
@@ -1270,6 +1430,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/mute-stream@npm:^0.0.4":
+  version: 0.0.4
+  resolution: "@types/mute-stream@npm:0.0.4"
+  dependencies:
+    "@types/node": "npm:*"
+  checksum: af8d83ad7b68ea05d9357985daf81b6c9b73af4feacb2f5c2693c7fd3e13e5135ef1bd083ce8d5bdc8e97acd28563b61bb32dec4e4508a8067fcd31b8a098632
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:*":
   version: 20.11.25
   resolution: "@types/node@npm:20.11.25"
@@ -1288,6 +1457,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^20.14.13":
+  version: 20.14.13
+  resolution: "@types/node@npm:20.14.13"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: 749160b6bd9866e6169cb1a222e75aaf81da3868af1fda1e1e66d33c7e182be381f98a42b7d231fddf470f6389f2052ee842e776b3fdc677df798b933617866d
+  languageName: node
+  linkType: hard
+
 "@types/normalize-package-data@npm:^2.4.0":
   version: 2.4.4
   resolution: "@types/normalize-package-data@npm:2.4.4"
@@ -1299,6 +1477,13 @@ __metadata:
   version: 7.5.8
   resolution: "@types/semver@npm:7.5.8"
   checksum: 3496808818ddb36deabfe4974fd343a78101fa242c4690044ccdc3b95dcf8785b494f5d628f2f47f38a702f8db9c53c67f47d7818f2be1b79f2efb09692e1178
+  languageName: node
+  linkType: hard
+
+"@types/wrap-ansi@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@types/wrap-ansi@npm:3.0.0"
+  checksum: 8aa644946ca4e859668c36b8e2bcf2ac4bdee59dac760414730ea57be8a93ae9166ebd40a088f2ab714843aaea2a2a67f0e6e6ec11cfc9c8701b2466ca1c4089
   languageName: node
   linkType: hard
 
@@ -2053,7 +2238,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cli-spinners@npm:^2.5.0":
+"cli-spinners@npm:^2.5.0, cli-spinners@npm:^2.9.2":
   version: 2.9.2
   resolution: "cli-spinners@npm:2.9.2"
   checksum: a0a863f442df35ed7294424f5491fa1756bd8d2e4ff0c8736531d886cec0ece4d85e8663b77a5afaf1d296e3cbbebff92e2e99f52bbea89b667cbe789b994794
@@ -4115,23 +4300,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inquirer@npm:^9.3.5":
-  version: 9.3.5
-  resolution: "inquirer@npm:9.3.5"
+"inquirer@npm:^10.1.4":
+  version: 10.1.4
+  resolution: "inquirer@npm:10.1.4"
   dependencies:
-    "@inquirer/figures": "npm:^1.0.3"
+    "@inquirer/prompts": "npm:^5.3.4"
+    "@inquirer/type": "npm:^1.5.1"
+    "@types/mute-stream": "npm:^0.0.4"
     ansi-escapes: "npm:^4.3.2"
-    cli-width: "npm:^4.1.0"
-    external-editor: "npm:^3.1.0"
-    mute-stream: "npm:1.0.0"
-    ora: "npm:^5.4.1"
+    mute-stream: "npm:^1.0.0"
     run-async: "npm:^3.0.0"
     rxjs: "npm:^7.8.1"
-    string-width: "npm:^4.2.3"
-    strip-ansi: "npm:^6.0.1"
-    wrap-ansi: "npm:^6.2.0"
-    yoctocolors-cjs: "npm:^2.1.2"
-  checksum: 77084423a2ff54f200b5b25900a212a92f496b7206df49c0031f17360f9a51ecfd7993e9e155b609631e636fa0fccfefcc03d01016e55ed32d5ec18f5644f288
+  checksum: f2a4bc76bd79a5a42a58697a6658bc670a5c4bf66e254eccd9702350ac0c0321ea1b8ad7982120dafa8f532b398e8766426cf96d3f3e6f55ef613425a5de6ea2
   languageName: node
   linkType: hard
 
@@ -5243,7 +5423,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mute-stream@npm:1.0.0":
+"mute-stream@npm:^1.0.0":
   version: 1.0.0
   resolution: "mute-stream@npm:1.0.0"
   checksum: 36fc968b0e9c9c63029d4f9dc63911950a3bdf55c9a87f58d3a266289b67180201cade911e7699f8b2fa596b34c9db43dad37649e3f7fdd13c3bb9edb0017ee7
