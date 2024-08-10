@@ -43,7 +43,7 @@ Here you can find a [working example][example] of this project deployed to Azure
 
 ## Running the example
 
-To run the example, you need to install all the dependencies with your favorite package manager:
+To run the example, you need to install all the dependencies with your favorite package manager (including the ones inside the `server` folder):
 
 ```bash
 yarn install
