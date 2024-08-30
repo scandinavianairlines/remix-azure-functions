@@ -1,22 +1,17 @@
-import { FlatCompat } from '@eslint/eslintrc';
+import importPlugin from 'eslint-plugin-import-x';
 import jsdoc from 'eslint-plugin-jsdoc';
 import node from 'eslint-plugin-n';
 import prettier from 'eslint-plugin-prettier/recommended';
 import sortDestructureKeys from 'eslint-plugin-sort-destructure-keys';
 import unicorn from 'eslint-plugin-unicorn';
 import vitest from 'eslint-plugin-vitest';
-import path from 'node:path';
-import url from 'node:url';
-
-const standard = new FlatCompat({
-  baseDirectory: path.dirname(url.fileURLToPath(import.meta.url)),
-}).extends('eslint-config-standard');
+import neostandard from 'neostandard';
 
 /**
- * @type {Array<import('eslint').Linter.FlatConfig>}
+ * @type {Array<import('eslint').Linter.Config>}
  */
 export default [
-  ...standard,
+  ...neostandard({ noJsx: true, semi: true, ts: false }),
   jsdoc.configs['flat/recommended-typescript-flavor-error'],
   node.configs['flat/recommended-script'],
   unicorn.configs['flat/recommended'],
@@ -24,52 +19,45 @@ export default [
     files: ['*.js', '**/*.js'],
     ignores: ['**/coverage'],
     languageOptions: {
-      ecmaVersion: 'latest',
+      parserOptions: {
+        ecmaFeatures: {
+          impliedStrict: true,
+          jsx: false,
+        },
+        ecmaVersion: 'latest',
+      },
       sourceType: 'module',
     },
     plugins: {
       'sort-destructure-keys': sortDestructureKeys,
+      'import-x': importPlugin,
     },
     settings: {
+      languageOptions: {
+        ecmaVersion: 2022,
+        sourceType: 'module',
+      },
       jsdoc: {
         mode: 'typescript',
       },
     },
     rules: {
-      'unicorn/no-array-callback-reference': 'off',
-      'unicorn/no-keyword-prefix': 'off',
-      'unicorn/no-process-exit': 'off',
-      'unicorn/prefer-spread': 'off',
-      'unicorn/expiring-todo-comments': 'off',
-      'unicorn/string-content': 'off',
-      'unicorn/prefer-set-has': 'off',
-      'unicorn/no-array-reduce': 'off',
-      'unicorn/no-useless-undefined': 'off',
-      'unicorn/import-style': 'off',
-      'unicorn/no-array-for-each': 'off',
-      'unicorn/prefer-object-has-own': 'off',
-      'unicorn/prefer-at': 'off',
-      'unicorn/prefer-top-level-await': 'off',
-      'unicorn/template-indent': 'off',
-      'unicorn/require-post-message-target-origin': 'off',
-      'unicorn/no-nested-ternary': 'off',
-      'unicorn/prevent-abbreviations': [
+      '@stylistic/space-before-function-paren': [
         'error',
-        {
-          checkDefaultAndNamespaceImports: false,
-          checkShorthandImports: false,
-          allowList: {
-            props: true,
-            prop: true,
-            Prop: true,
-            Props: true,
-          },
-        },
+        { anonymous: 'always', named: 'never', asyncArrow: 'always' },
       ],
       strict: 'error',
-      'sort-destructure-keys/sort-destructure-keys': 2,
+      'sort-destructure-keys/sort-destructure-keys': ['error'],
       'n/file-extension-in-import': ['error', 'always'],
       'n/no-missing-import': 'warn',
+      'import-x/no-unresolved': 'error',
+      'import-x/named': 'error',
+      'import-x/namespace': 'error',
+      'import-x/default': 'error',
+      'import-x/export': 'error',
+      'import-x/no-named-as-default': 'warn',
+      'import-x/no-named-as-default-member': 'warn',
+      'import-x/no-duplicates': 'warn',
     },
   },
   {
