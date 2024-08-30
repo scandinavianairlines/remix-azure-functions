@@ -13,28 +13,28 @@
     "deploy": "swa deploy"
   },
   "dependencies": {
-    "@azure/functions": "^4.5.0",
-    "@remix-run/react": "^2.10.2",
+    "@azure/functions": "^4.5.1",
+    "@remix-run/react": "^2.11.2",
     "@scandinavianairlines/remix-azure-functions": "^1.0.3",
-    "isbot": "^4.4.0",
+    "isbot": "^5.1.17",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@azure/static-web-apps-cli": "^1.1.10",
-    "@remix-run/dev": "^2.10.2",
-    "@remix-run/eslint-config": "^2.10.2",
-    "@remix-run/serve": "^2.10.2",
-    "@types/react": "^18.3.3",
+    "@azure/static-web-apps-cli": "^2.0.1",
+    "@remix-run/dev": "^2.11.2",
+    "@remix-run/eslint-config": "^2.11.2",
+    "@remix-run/serve": "^2.11.2",
+    "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
     "azure-functions-core-tools": "^4.0.5907",
     "eslint": "^8.57.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.9.0",
-    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "npm-run-all": "^4.1.5",
-    "vite": "^5.3.3"
+    "vite": "^5.4.2"
   },
   "resolutions": {
     "axios": ">=0.28.0",
