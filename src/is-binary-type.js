@@ -1,4 +1,4 @@
-const BINARY_TYPES = [
+const BINARY_TYPES = new Set([
   'application/octet-stream',
   // Docs
   'application/epub+zip',
@@ -56,7 +56,7 @@ const BINARY_TYPES = [
   'application/x-tar',
   'application/x-zip',
   'application/zip',
-];
+]);
 
 /**
  * Checks given `content-type` with a list of binary types, if the given value is included returns `true`.
@@ -65,5 +65,5 @@ const BINARY_TYPES = [
  */
 export function isBinaryType(contentType) {
   const [test] = contentType.split(';');
-  return BINARY_TYPES.includes(test);
+  return BINARY_TYPES.has(test || '');
 }
