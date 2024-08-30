@@ -1,3 +1,10 @@
+## 1.0.4 (2024-08-30)
+
+
+### Bug Fixes
+
+* **binary-type:** defaults to empty string 1a0b7d0
+
 ## 1.0.3 (2024-05-23)
 
 
