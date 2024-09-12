@@ -1598,7 +1598,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/typescript-estree@npm:8.3.0, @typescript-eslint/typescript-estree@npm:^8.1.0":
+"@typescript-eslint/typescript-estree@npm:8.3.0":
   version: 8.3.0
   resolution: "@typescript-eslint/typescript-estree@npm:8.3.0"
   dependencies:
@@ -3288,10 +3288,9 @@ __metadata:
   linkType: hard
 
 "eslint-plugin-import-x@npm:^4.1.1":
-  version: 4.1.1
-  resolution: "eslint-plugin-import-x@npm:4.1.1"
+  version: 4.2.1
+  resolution: "eslint-plugin-import-x@npm:4.2.1"
   dependencies:
-    "@typescript-eslint/typescript-estree": "npm:^8.1.0"
     "@typescript-eslint/utils": "npm:^8.1.0"
     debug: "npm:^4.3.4"
     doctrine: "npm:^3.0.0"
@@ -3304,7 +3303,7 @@ __metadata:
     tslib: "npm:^2.6.3"
   peerDependencies:
     eslint: ^8.57.0 || ^9.0.0
-  checksum: 10/9c0ee62a14f6fcfcf96a519797b96866bbf35b7b214913bcf0efeaea574e9b2bf53a2d60945963a975761515581268022dbad54b43e4b572389b5778fb4c8232
+  checksum: 10/b3737a6ac3ee6580de799dc588e2bb7a8f7892295d64b354e6bb4ecea7131375fdd2f81d804b04d21065857658e27105429da861959a274af4b87e2d4e41d58a
   languageName: node
   linkType: hard
 
