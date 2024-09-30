@@ -25,7 +25,7 @@
   "devDependencies": {
     "@azure/static-web-apps-cli": "^1.1.10",
     "azure-functions-core-tools": "^4.0.5907",
-    "vite": "^5.3.6"
+    "vite": "^5.4.8"
   },
   "resolutions": {
     "axios": ">=0.28.0",
