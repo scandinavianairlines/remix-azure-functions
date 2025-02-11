@@ -522,7 +522,7 @@ __metadata:
     isbot: "npm:^5.1.20"
     react: "npm:^18.3.1"
     react-dom: "npm:^18.3.1"
-    vite: "npm:^6.0.9"
+    vite: "npm:^6.1.0"
   languageName: unknown
   linkType: soft
 
@@ -3636,14 +3636,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.49":
-  version: 8.4.49
-  resolution: "postcss@npm:8.4.49"
+"postcss@npm:^8.5.1":
+  version: 8.5.2
+  resolution: "postcss@npm:8.5.2"
   dependencies:
-    nanoid: "npm:^3.3.7"
+    nanoid: "npm:^3.3.8"
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.1"
-  checksum: 10/28fe1005b1339870e0a5006375ba5ac1213fd69800f79e7db09c398e074421ba6e162898e94f64942fed554037fd292db3811d87835d25ab5ef7f3c9daacb6ca
+  checksum: 10/e08c2be3cf461cc63cf4c8e97bb3d5185e196ee0a9b75879cf130590f32bc38c7829c6c4e260158e214fb68a828a95bdac84c8f17fefba993d3ced686643c3e2
   languageName: node
   linkType: hard
 
@@ -4627,14 +4627,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^6.0.9":
-  version: 6.0.11
-  resolution: "vite@npm:6.0.11"
+"vite@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "vite@npm:6.1.0"
   dependencies:
     esbuild: "npm:^0.24.2"
     fsevents: "npm:~2.3.3"
-    postcss: "npm:^8.4.49"
-    rollup: "npm:^4.23.0"
+    postcss: "npm:^8.5.1"
+    rollup: "npm:^4.30.1"
   peerDependencies:
     "@types/node": ^18.0.0 || ^20.0.0 || >=22.0.0
     jiti: ">=1.21.0"
@@ -4675,7 +4675,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10/753d06b07a4d90863d3478162cfb18fa5cd7f6eb22a74525348a8fd46593a82875d0f92352c2f4833e15cb6581fc97d6ab434c0c5d83d8d58cfbbe6e7267726d
+  checksum: 10/5de360ac0ecb3cac85f796ec97d5347e2c8102a8845309af87f52296279464a6d5b880beb740bc42740936ec9de8bf0acce6a6ed3b3b24a733162a5d63d9f46b
   languageName: node
   linkType: hard
 
