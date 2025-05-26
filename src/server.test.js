@@ -1,14 +1,11 @@
-/* eslint-disable n/no-unsupported-features/node-builtins */
 import { HttpRequest } from '@azure/functions';
-import { createRequestHandler as createRemixRequestHandler, readableStreamToString } from '@remix-run/node';
+import { createRequestHandler as createRemixRequestHandler } from '@remix-run/node';
 import { beforeEach, describe, expect, test, vi } from 'vitest';
 
 import { createRequestHandler } from './server.js';
 
 vi.mock('@remix-run/node', () => ({
   createRequestHandler: vi.fn(),
-  readableStreamToString: vi.fn(),
-  installGlobals: vi.fn(),
 }));
 
 describe('server', () => {
@@ -40,7 +37,7 @@ describe('server', () => {
     expect(mockHandler).toHaveBeenCalledWith(expect.any(Request), undefined);
     expect(response).toEqual(
       expect.objectContaining({
-        body: undefined,
+        body: null,
         headers: expect.any(Object),
         status: expect.any(Number),
       })
@@ -65,7 +62,7 @@ describe('server', () => {
     expect(mockHandler).toHaveBeenCalledWith(expect.any(Request), undefined);
     expect(response).toEqual(
       expect.objectContaining({
-        body: expect.any(String),
+        body: expect.any(ReadableStream),
         headers: {
           'content-type': 'text/plain;charset=UTF-8',
         },
@@ -85,7 +82,6 @@ describe('server', () => {
       url: 'https://test.com',
     });
     createRemixRequestHandler.mockReturnValue(mockHandler);
-    readableStreamToString.mockResolvedValue('a representation of a binary file');
     const handler = createRequestHandler({
       build: {},
     });
@@ -93,10 +89,9 @@ describe('server', () => {
 
     expect(createRemixRequestHandler).toHaveBeenCalled();
     expect(mockHandler).toHaveBeenCalledWith(expect.any(Request), undefined);
-    expect(readableStreamToString).toHaveBeenCalledWith(expect.any(ReadableStream), 'base64');
     expect(response).toEqual(
       expect.objectContaining({
-        body: expect.any(String),
+        body: expect.any(ReadableStream),
         headers: {
           'content-type': 'image/png',
         },
@@ -306,7 +301,7 @@ describe('server', () => {
     });
 
     const response = await handler(mockHttpRequest, {});
-    expect(response.body).toBe('incoming-body');
+    expect(response.body).toBeInstanceOf(ReadableStream);
 
     expect(mockHandler).toHaveBeenCalledWith(
       expect.objectContaining({

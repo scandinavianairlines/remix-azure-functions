@@ -1,12 +1,4 @@
-import {
-  createRequestHandler as createRemixRequestHandler,
-  installGlobals,
-  readableStreamToString,
-} from '@remix-run/node';
-
-import { isBinaryType } from './is-binary-type.js';
-
-installGlobals();
+import { createRequestHandler as createRemixRequestHandler } from '@remix-run/node';
 
 /**
  * @typedef {(request: import('@azure/functions').HttpRequest, context: import('@azure/functions').InvocationContext) => Promise<import('@remix-run/node').AppLoadContext>} GetLoadContextFn
@@ -39,15 +31,9 @@ function urlParser(request) {
  * @returns {Promise<import('@azure/functions').HttpResponseInit>} A Azure function `response init` object.
  */
 async function toAzureResponse(response) {
-  const contentType = response.headers.get('Content-Type') || '';
-  const isBase64Encoded = isBinaryType(contentType);
-  // We make sure to always return a string for the body and not a stream/buffer as Azure Functions for Node.js doesn't support it, yet.
-  const body = response.body
-    ? await (isBase64Encoded ? readableStreamToString(response.body, 'base64') : response.text())
-    : undefined;
-
+  const _response = response.clone();
   return {
-    body,
+    body: _response.body,
     headers: Object.fromEntries(response.headers.entries()),
     status: response.status,
   };
@@ -76,7 +62,6 @@ function createRemixRequest(request, options = {}) {
     duplex: isGetOrHead(request) ? undefined : 'half',
   };
 
-  // eslint-disable-next-line n/no-unsupported-features/node-builtins
   return new Request(url.href, init);
 }
 
