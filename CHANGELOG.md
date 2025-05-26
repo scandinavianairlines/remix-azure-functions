@@ -1,3 +1,16 @@
+# 2.0.0 (2025-05-26)
+
+
+### Features
+
+* **node:** drop support for node 18 16b5ff0
+* **stream:** add support streaming responses and remix v2 1178286
+
+
+### BREAKING CHANGES
+
+* **node:** Node 18 is no longer supported
+
 ## 1.0.4 (2024-08-30)
 
 
