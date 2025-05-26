@@ -1,6 +1,4 @@
-import importPlugin from 'eslint-plugin-import-x';
 import jsdoc from 'eslint-plugin-jsdoc';
-import node from 'eslint-plugin-n';
 import prettier from 'eslint-plugin-prettier/recommended';
 import sortDestructureKeys from 'eslint-plugin-sort-destructure-keys';
 import unicorn from 'eslint-plugin-unicorn';
@@ -13,8 +11,7 @@ import neostandard from 'neostandard';
 export default [
   ...neostandard({ noJsx: true, semi: true, ts: false }),
   jsdoc.configs['flat/recommended-typescript-flavor-error'],
-  node.configs['flat/recommended-script'],
-  unicorn.configs['flat/recommended'],
+  unicorn.configs['recommended'],
   {
     files: ['*.js', '**/*.js'],
     ignores: ['**/coverage'],
@@ -30,7 +27,6 @@ export default [
     },
     plugins: {
       'sort-destructure-keys': sortDestructureKeys,
-      'import-x': importPlugin,
     },
     settings: {
       languageOptions: {
