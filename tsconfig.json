@@ -1,6 +1,7 @@
 {
   "extends": "@tsconfig/node-lts/tsconfig.json",
   "compilerOptions": {
+    "composite": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "target": "ES2022",
