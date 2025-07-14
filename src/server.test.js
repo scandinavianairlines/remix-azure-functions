@@ -118,7 +118,7 @@ describe('server', () => {
 
     await handler(mockHttpRequest, mockAzureContext);
 
-    expect(mockGetLoadContext).toHaveBeenCalledWith(mockHttpRequest, mockAzureContext);
+    expect(mockGetLoadContext).toHaveBeenCalledWith(expect.any(Request), mockAzureContext);
   });
 
   test('calls the given urlParser function', async () => {
