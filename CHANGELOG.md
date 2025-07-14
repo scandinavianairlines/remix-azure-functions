@@ -1,3 +1,10 @@
+## 2.0.1 (2025-07-14)
+
+
+### Bug Fixes
+
+* **load-context:** pass remix request to `getLoadContext` instead of raw request 8eee350
+
 # 2.0.0 (2025-05-26)
 
 
