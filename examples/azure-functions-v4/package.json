@@ -13,25 +13,25 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@remix-run/css-bundle": "^2.16.7",
-    "@remix-run/node": "^2.16.7",
-    "@remix-run/react": "^2.16.7",
-    "@remix-run/serve": "^2.16.7",
-    "@scandinavianairlines/remix-azure-functions": "^0.0.0",
-    "@vanilla-extract/css": "^1.17.2",
-    "@vanilla-extract/recipes": "^0.5.5",
+    "@remix-run/css-bundle": "^2.16.8",
+    "@remix-run/node": "^2.16.8",
+    "@remix-run/react": "^2.16.8",
+    "@remix-run/serve": "^2.16.8",
+    "@scandinavianairlines/remix-azure-functions": "^2.0.0",
+    "@vanilla-extract/css": "^1.17.4",
+    "@vanilla-extract/recipes": "^0.5.7",
     "isbot": "^5.1.28",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@azure/functions": "^4.7.2",
-    "@remix-run/dev": "^2.16.7",
-    "@remix-run/eslint-config": "^2.16.7",
-    "@types/react": "^18.3.22",
+    "@remix-run/dev": "^2.16.8",
+    "@remix-run/eslint-config": "^2.16.8",
+    "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
-    "azure-functions-core-tools": "^4.0.7030",
-    "eslint": "^9.27.0",
+    "azure-functions-core-tools": "^4.0.7512",
+    "eslint": "^9.31.0",
     "npm-run-all": "^4.1.5",
     "typescript": "^5.8.3"
   },
@@ -39,7 +39,7 @@
     "node": ">=20.0.0"
   },
   "resolutions": {
-    "axios": ">=1.7.4",
+    "axios": ">=1.8.2",
     "braces": ">=3.0.3",
     "cookie": ">=0.7.0",
     "cross-spawn": ">=7.0.5",
@@ -48,7 +48,8 @@
     "path-to-regexp": ">=0.1.12",
     "rollup": ">=3.29.5",
     "tar": ">=6.2.1",
-    "undici": ">=5.28.4",
+    "undici@5": ">=5.28.4",
+    "undici@6": ">=6.21.1",
     "ws": ">= 7.5.10"
   },
   "packageManager": "yarn@4.9.1"
