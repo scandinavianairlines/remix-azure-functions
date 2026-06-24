@@ -1,7 +1,7 @@
 import { createRequestHandler as createReactRouterRequestHandler } from 'react-router';
 
 /**
- * @typedef {(request: Request, context: import('@azure/functions').InvocationContext) => Promise<import('react-router').UNSAFE_MiddlewareEnabled extends true ? import('react-router').RouterContextProvider : import('react-router').AppLoadContext>} GetLoadContextFn
+ * @typedef {(request: Request, context: import('@azure/functions').InvocationContext) => Promise<import('react-router').RouterContextProvider>} GetLoadContextFn
  */
 /**
  * Checks if the incoming request is a GET or HEAD request.
@@ -62,6 +62,7 @@ function createRequest(request, options = {}) {
     signal: controller.signal,
     // eslint-disable-next-line unicorn/no-null -- Request init expects a `null` value.
     body: isGetOrHead(request) ? null : request.body,
+    // @ts-expect-error -- `duplex` is not part of the RequestInit type, but it is required for streaming requests.
     duplex: isGetOrHead(request) ? undefined : 'half',
   };
 
@@ -78,6 +79,7 @@ function createRequest(request, options = {}) {
  * @returns {import('@azure/functions').HttpHandler} A Azure function handler.
  */
 export function createRequestHandler(options) {
+  // @ts-expect-error -- `process.env.NODE_ENV` is not typed as a string, but it is always a string in Node.js.
   const handler = createReactRouterRequestHandler(options.build, options.mode || process.env.NODE_ENV);
 
   /**
