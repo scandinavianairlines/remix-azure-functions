@@ -1,3 +1,4 @@
+import importX from 'eslint-plugin-import-x';
 import { jsdoc } from 'eslint-plugin-jsdoc';
 import prettier from 'eslint-plugin-prettier/recommended';
 import sortDestructureKeys from 'eslint-plugin-sort-destructure-keys';
@@ -14,7 +15,7 @@ export default [
   unicorn.configs['recommended'],
   {
     files: ['*.js', '**/*.js'],
-    ignores: ['**/coverage'],
+    ignores: ['**/coverage', 'eslint.config.js'],
     languageOptions: {
       parserOptions: {
         ecmaFeatures: {
@@ -27,6 +28,7 @@ export default [
     },
     plugins: {
       'sort-destructure-keys': sortDestructureKeys,
+      'import-x': importX,
     },
     settings: {
       languageOptions: {
@@ -66,6 +68,8 @@ export default [
       ...vitest.configs.recommended.rules,
       'unicorn/error-message': 'off',
       'unicorn/no-null': 'off',
+      'unicorn/no-unreadable-new-expression': 'off',
+      'unicorn/prefer-https': 'off',
       'unicorn/prevent-abbreviations': 'off',
       'unicorn/consistent-function-scoping': 'off',
     },
