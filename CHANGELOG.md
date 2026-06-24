@@ -1,3 +1,10 @@
+## 3.0.1 (2026-06-24)
+
+
+### Bug Fixes
+
+* **types:** update `getLoadContext` function type to return a RouterContextProvider 594bb85
+
 # 3.0.0 (2025-12-16)
 
 
