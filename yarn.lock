@@ -1296,7 +1296,7 @@ __metadata:
     eslint-plugin-jsdoc: "npm:^63.0.7"
     eslint-plugin-prettier: "npm:^5.5.6"
     eslint-plugin-sort-destructure-keys: "npm:^3.0.0"
-    eslint-plugin-unicorn: "npm:^66.0.0"
+    eslint-plugin-unicorn: "npm:^69.0.0"
     eslint-plugin-vitest: "npm:^0.5.4"
     husky: "npm:^9.1.7"
     inquirer: "npm:^14.0.2"
@@ -3835,9 +3835,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-unicorn@npm:^66.0.0":
-  version: 66.0.0
-  resolution: "eslint-plugin-unicorn@npm:66.0.0"
+"eslint-plugin-unicorn@npm:^69.0.0":
+  version: 69.0.0
+  resolution: "eslint-plugin-unicorn@npm:69.0.0"
   dependencies:
     "@babel/helper-validator-identifier": "npm:^7.29.7"
     "@eslint-community/eslint-utils": "npm:^4.9.1"
@@ -3857,7 +3857,7 @@ __metadata:
     strip-indent: "npm:^4.1.1"
   peerDependencies:
     eslint: ">=10.4"
-  checksum: 10c0/f8e98caf8d9e85ee31c250c39bcdd039d17eb55f8a05c1a0a100f904f0d9fa21389b00136c6105603f9bb0d5c5b49051e5a277351bed625c28d90d588e92a7dd
+  checksum: 10c0/77727900c29daf3850f354117a3781224b75d002122beb1574a39c5dd718d1285a48b50513e544083712ad0c2755136b5583ccac575a3f076d13e5a66726fa05
   languageName: node
   linkType: hard
 
