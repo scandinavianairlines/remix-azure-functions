@@ -52,7 +52,7 @@
     "@types/react": "^19.2.17",
     "@vitest/coverage-v8": "^4.1.9",
     "commitizen": "^4.3.2",
-    "eslint": "^9.39.0",
+    "eslint": "^10.6.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-disable": "^2.0.3",
     "eslint-plugin-import-x": "^4.17.0",
