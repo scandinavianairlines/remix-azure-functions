@@ -556,16 +556,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@es-joy/jsdoccomment@npm:~0.87.0":
-  version: 0.87.0
-  resolution: "@es-joy/jsdoccomment@npm:0.87.0"
+"@es-joy/jsdoccomment@npm:~0.88.0":
+  version: 0.88.0
+  resolution: "@es-joy/jsdoccomment@npm:0.88.0"
   dependencies:
     "@types/estree": "npm:^1.0.9"
     "@typescript-eslint/types": "npm:^8.59.4"
     comment-parser: "npm:1.4.7"
     esquery: "npm:^1.7.0"
     jsdoc-type-pratt-parser: "npm:~7.2.0"
-  checksum: 10c0/9e64b79c8135fa5ad1391ddea7a25d5884f572eb5af168a5c81d0bddac4439b4de89197e9b07adfa566f6285a1fa2fc2ee3c8e3d774656ed422efad43f6b33d4
+  checksum: 10c0/145c7ce6c797495dd7e2562b725175f216cd463080fe262ffd10daebec9e3803bb5009c5053a8110d56d27abb2fdf75483aa18db04ee1fe3b9d96a79c50fd57f
   languageName: node
   linkType: hard
 
@@ -3723,10 +3723,10 @@ __metadata:
   linkType: hard
 
 "eslint-plugin-jsdoc@npm:^63.0.7":
-  version: 63.0.7
-  resolution: "eslint-plugin-jsdoc@npm:63.0.7"
+  version: 63.0.11
+  resolution: "eslint-plugin-jsdoc@npm:63.0.11"
   dependencies:
-    "@es-joy/jsdoccomment": "npm:~0.87.0"
+    "@es-joy/jsdoccomment": "npm:~0.88.0"
     "@es-joy/resolve.exports": "npm:1.2.0"
     are-docs-informative: "npm:^0.0.2"
     comment-parser: "npm:1.4.7"
@@ -3737,12 +3737,12 @@ __metadata:
     html-entities: "npm:^2.6.0"
     object-deep-merge: "npm:^2.0.1"
     parse-imports-exports: "npm:^0.2.4"
-    semver: "npm:^7.8.2"
+    semver: "npm:^7.8.5"
     spdx-expression-parse: "npm:^4.0.0"
     to-valid-identifier: "npm:^1.0.0"
   peerDependencies:
     eslint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0
-  checksum: 10c0/ad48b09bf90941d9fecdcc22275363dd56a342923b58532ed9945be8b86a1cf4659c849612d4b7e60d18b5dba5e742cf2bc6ed48f3fac7467b512a6d917f2f2f
+  checksum: 10c0/71b84c085d907b84823e7afe0b123e78a26182856e8399e0e1f4afc42745f89db67b7f3fb95549879153aa85cbd32ca6d2954702456d6999cb45e79fe7c534ea
   languageName: node
   linkType: hard
 
@@ -7393,7 +7393,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.5.2, semver@npm:^7.7.2, semver@npm:^7.8.2, semver@npm:^7.8.4":
+"semver@npm:^7.5.2, semver@npm:^7.7.2, semver@npm:^7.8.4, semver@npm:^7.8.5":
   version: 7.8.5
   resolution: "semver@npm:7.8.5"
   bin:
